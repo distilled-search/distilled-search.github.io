@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DISCO: Distilled Tree Search over Continuous Actions</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+
+
+                        <h1 class="title is-1 publication-title">
+                            <span>Long-Horizon Multi-Object Rearrangement via</span>
+                            <span style="color: #22c55e;">Distilled Tree Search over Continuous Actions</span><br>
+                        </h1>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <span style="font-size: 125%;">Anonymous Authors</span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 0">
+        <div class="container is-fluid">
+            <div class="columns is-centered has-text-centered">
+                <video poster="" id="" autoplay muted controls loop width="100%" playbackRate=2.0 style="border-radius: 5px; max-width: 1050px;">
+                    <source src="assets/DISCO/web_teaser_edited.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                            <p style="font-size: 125%">Despite recent advances in policy learning, long-horizon manipulation
+                            remains difficult because learned policies must avoid compounding errors while
+                            preserving future feasibility. While search-based planning can explicitly reason
+                            over such future consequences, it quickly becomes expensive in high-dimensional
+                            continuous action spaces. This raises a central question: how can long-horizon
+                            reasoning from search be transferred into policies in continuous action spaces?
+                            To this end, we propose <span style="font-weight: bold; color: #22c55e;">DISCO</span>: <span style="font-weight: bold;">Di</span>stilled Tree <span style="font-weight: bold;">S</span>earch over <span style="font-weight: bold;">Co</span>ntinuous Actions. <span style="font-weight: bold; color: #22c55e;">DISCO</span> uses progressive-widening MCTS in physics simulation to generate
+                            long-horizon plans. During search, a learned policy proposes continuous actions,
+                            while a learned value function scores actions by their expected progress toward
+                            task completion. Using GPU-parallelized simulation, <span style="font-weight: bold; color: #22c55e;">DISCO</span> periodically distills
+                            MCTS-generated plans into the policy-value model, improving the action propos
+                            als and value estimates used in subsequent searches. Finally, the learned policy
+                            value model can be directly deployed without the need for simulator-based search
+                            at test time. Across simulated and real-world rearrangement tasks, <span style="font-weight: bold; color: #22c55e;">DISCO</span> out
+                            performs behavior cloning, reinforcement learning, and search-based baselines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 1rem;">
+        <div class="container" style="max-width: 75%; margin: 0 auto;">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3 has-text-centered"><span class="dvima">Select a long-horizon task to execute with <span style="font-weight: bold; color: #22c55e;">DISCO</span>:</span></h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="columns is-centered">
+              <div class="column is-full-width" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                  <img src="assets/task_chooser/p1.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Store an item' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p2.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Heat soup' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p3.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Slide Window' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p4.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Gallop' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p5.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Rotate in place' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p6.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Retrieve from safe' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p7.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Unload Cart' onclick="populateDemo(this, 1);">
+                  <img src="assets/task_chooser/p8.png" width="8%" height="auto" style="border-radius: 10px; margin: 5px; object-fit: cover; aspect-ratio: 1/1;" alt='Unload Cart' onclick="populateDemo(this, 1);">
+              </div>
+          </div>
+
+            <div class="row border rounded" style="padding-top:2px; padding-bottom:12px; margin-top: 20px;">
+                <div class="col-md-6" style="text-align: center;">
+                    <video id="demo-video-1" style="border-radius: 5px; width: 70%;" autoplay loop muted webkit-playsinline playsinline onclick="setAttribute('controls', 'true');">
+                        <source id="expandedImg-1" src="assets/task_chooser/select.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    function populateDemo(img, demoId) {
+        const videoSource = document.getElementById("expandedImg-" + demoId);
+        const videoElement = document.getElementById("demo-video-" + demoId);
+        const textElement = document.getElementById("imgtext-" + demoId);
+
+        const videoPath = img.src.replace(/p(\d+)\.png$/, 'c$1.mp4');
+        videoSource.src = videoPath;
+        videoElement.load();
+
+        if (textElement) {
+            textElement.innerHTML = img.alt;
+        }
+    }
+    </script>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">Shelf Packing Task</span></h2>
+                        <p style="font-size: 125%">
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> can execute the task of packing multiple objects into a shelf.
+                            Each scene contains from 2 to 7 objects which have to be placed in a shelf without any object dropping or falling out.
+                            Since object placement is not collision-constrained, the robot may exploit physical interactions by pushing around
+                            previously placed objects while inserting new ones, while being aware of objects falling out. Shelves are constructed
+                            with randomized dimensions. This task requires reasoning about object geometry, shelf occupancy, and contact-rich
+                            placement dynamics. We report reward as the fraction of objects inside the shelf, while during search we use the
+                            fraction of total object volume contained in the shelf as guidance. This task is given a simulation budget of
+                            <i>&beta;</i> = 270,000, and a pre-training dataset of 14,000 pick and place samples.
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> is trained on 50 environments and tested on 15 environments.
+                        </p>
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <video autoplay controls muted loop playsinline height="100%" style="width: 100%; max-width: 1100px; border-radius: 5px;">
+                                <source src="assets/DISCO/shelf_packing_exec.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">Object Stacking Task</span></h2>
+                        <p style="font-size: 125%">
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> can execute the task of stacking multiple objects of
+                            varying geometry on top of each other. Each scene contains from 2 to 6 objects which must be stably stacked into a
+                            single vertical tower, without knocking any off. This requires reasoning about object geometry, support stability,
+                            and contact dynamics, since each object must remain stably supported without toppling the tower. We report reward
+                            as the fraction of objects in the tower, while search guidance uses normalized tower-height. This task is given a
+                            simulation budget of <i>&beta;</i> = 27,000, and a pre-training dataset of 14,000 pick and place samples.
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> is trained on 50 environments and tested on 15 environments.
+                        </p>
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <video autoplay controls muted loop playsinline height="100%" style="width: 100%; max-width: 1100px; border-radius: 5px;">
+                                <source src="assets/DISCO/object_stacking_exec.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">Multi-Modality</span></h2>
+                        <p style="font-size: 125%">
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> can solve the same task in multiple, distinct ways.
+                            This multi-modality arises from distillation: the policy is trained on many different plans for the same task,
+                            each capturing a different way of solving it. As a result, when deployed,
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s policy produces actions that make task progress
+                            along different solution paths. Shown below are two different ways in which
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> builds a stable stack of objects.
+                        </p>
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <video autoplay controls muted loop playsinline height="100%" style="width: 100%; max-width: 1100px; border-radius: 5px;">
+                                <source src="assets/DISCO/multimodal_plans.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">Real World Execution</span></h2>
+                        <p style="font-size: 125%">
+                            We compare <span style="font-weight: bold; color: #22c55e;">DISCO</span> against the <b>3DFA</b> baseline on two real-world
+                            rearrangement tasks. The 3DFA baseline is a modified version of the 3DFA model trained on the sub-task demonstrations
+                            that were used to train <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s initial policy, and is transferred sim-to-real directly. Each video shows one trial;
+                            the caption reports the number of objects successfully packed. Please refer to the paper for more details.
+                        </p>
+                        <br>
+
+                        <h3 class="title is-4"><span class="dvima">Shelf Packing (3 objects)</span></h3>
+                        <p style="font-size: 125%">
+                            A real-world version of the shelf-packing task. We start the task with two objects already placed in the shelf,
+                            and use the same success conditions. For this task, we transfer our <span style="font-weight: bold; color: #22c55e;">DISCO</span>
+                            policy and value function from simulation to real using domain randomization, and roll it out, since this is a test-only task.
+                        </p>
+                        <br>
+
+                        <h4 class="title is-5" style="margin-bottom: 0.5rem;"><span style="color: #22c55e;">DISCO (Ours)</span></h4>
+                        <p class="rw-avg rw-avg-disco">Average Reward: 88.9</p>
+                        <div class="rw-grid">
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/DISCO/DISCO_shelf_t1_r3.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 1 &mdash; 3/3 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/DISCO/DISCO_shelf_t2_r3.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 2 &mdash; 3/3 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/DISCO/DISCO_shelf_t3_r2.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 3 &mdash; 2/3 packed</p>
+                            </div>
+                        </div>
+
+                        <h4 class="title is-5" style="margin-bottom: 0.5rem; margin-top: 1.5rem;">3DFA (Baseline)</h4>
+                        <p class="rw-avg rw-avg-baseline">Average Reward: 33.3</p>
+                        <div class="rw-grid">
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/3DFA/3DFA_shelf_t1_r1.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 1 &mdash; 1/3 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/3DFA/3DFA_shelf_t2_r1.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 2 &mdash; 1/3 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/shelf/3DFA/3DFA_shelf_t3_r1.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 3 &mdash; 1/3 packed</p>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <h3 class="title is-4" style="margin-top: 1.5rem;"><span class="dvima">Table Bussing (6 objects)</span></h3>
+                        <p style="font-size: 125%">
+                            This is a test-only task. The robot must place all cups, bowls, and plates into the tray while keeping each object
+                            upright, with minimal roll or pitch rotation to prevent toppling. We directly roll out the sim-to-real
+                            <span style="font-weight: bold; color: #22c55e;">DISCO</span> model on this task by domain randomizing the shelf pose
+                            in simulation, thus generalizing <span style="font-weight: bold; color: #22c55e;">DISCO</span> to place objects into
+                            box-like containers with arbitrary orientations.
+                        </p>
+                        <br>
+
+                        <h4 class="title is-5" style="margin-bottom: 0.5rem;"><span style="color: #22c55e;">DISCO (Ours)</span></h4>
+                        <p class="rw-avg rw-avg-disco">Average Reward: 83.3</p>
+                        <div class="rw-grid">
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/DISCO/DISCO_t1_r5.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 1 &mdash; 5/6 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/DISCO/DISCO_t2_r6.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 2 &mdash; 6/6 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/DISCO/DISCO_t3_r4.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 3 &mdash; 4/6 packed</p>
+                            </div>
+                        </div>
+
+                        <h4 class="title is-5" style="margin-bottom: 0.5rem; margin-top: 1.5rem;">3DFA (Baseline)</h4>
+                        <p class="rw-avg rw-avg-baseline">Average Reward: 27.8</p>
+                        <div class="rw-grid">
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/3DFA/3DFA_t1_r2.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 1 &mdash; 2/6 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/3DFA/3DFA_t2_r1.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 2 &mdash; 1/6 packed</p>
+                            </div>
+                            <div class="rw-cell">
+                                <video controls muted playsinline preload="metadata"><source src="assets/real_world/tray/3DFA/3DFA_t3_r2.mp4" type="video/mp4"></video>
+                                <p class="rw-caption">Trial 3 &mdash; 2/6 packed</p>
+                            </div>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .rw-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: flex-start;
+        }
+        .rw-cell {
+            flex: 1 1 260px;
+            max-width: 340px;
+            text-align: center;
+        }
+        .rw-cell video {
+            width: 100%;
+            border-radius: 5px;
+            background: #000;
+        }
+        .rw-caption {
+            font-size: 95%;
+            margin-top: 4px;
+            color: #4a4a4a;
+        }
+        .rw-avg {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 4px 14px;
+            border-radius: 6px;
+            font-size: 110%;
+            font-weight: bold;
+        }
+        .rw-avg-disco {
+            background: #dcfce7;
+            color: #15803d;
+        }
+        .rw-avg-baseline {
+            background: #f1f1f1;
+            color: #4a4a4a;
+        }
+    </style>
+
+</body>
+
+</html>
