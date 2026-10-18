@@ -204,3 +204,8 @@ body {
     max-height: 800px; /* You can adjust this value as per your design */
     overflow-y: auto;
 }
+
+/* Tree explorer: undo Bulma's global strong colour, which hides the banner titles */
+.dx strong {
+    color: inherit;
+}

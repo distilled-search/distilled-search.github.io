@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./static/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./assets/tree_explorer/explorer.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -143,6 +144,18 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <h2 class="title is-3 has-text-centered"><span class="dvima">Explore <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s Search Tree</span></h2>
+            <p style="font-size: 125%">
+                Grow the tree that <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s MCTS built for a task.
+                Sample the actions the search tried from a state, then pick one to watch the robot execute it in simulation.
+            </p>
+        </div>
+        <div class="dx" data-disco-explorer data-base="assets/tree_explorer/"></div>
+        <script defer src="./assets/tree_explorer/explorer.js"></script>
     </section>
 
     <section class="section" style="padding-top: 1rem;">

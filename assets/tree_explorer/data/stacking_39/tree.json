@@ -1,0 +1,511 @@
+{
+ "task": "stacking",
+ "env": 39,
+ "num_objects": 3,
+ "fps": 30,
+ "stride": 2,
+ "object_names": [
+  "52d307203aefd6bf366971e8a2cdf120_0",
+  "1f13b46cbc4741b3c2e50348f23d3d_1",
+  "d9c4ce130b7412bb1c1b3b2ed8d13bf8_2"
+ ],
+ "root": 0,
+ "nodes": [
+  {
+   "id": 0,
+   "parent": null,
+   "children": [
+    1,
+    7,
+    11,
+    42
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": null,
+   "progress": 1,
+   "visits": 500,
+   "Q": 0.0,
+   "image": "nodes/n_0.jpg",
+   "video": null,
+   "outcome_image": null,
+   "tried": {
+    "total": 33,
+    "failed": {
+     "no_contact_or_offset": 13,
+     "knocked_base": 1
+    },
+    "not_shown": 15
+   },
+   "replay": null,
+   "depth": 0,
+   "thumb": "thumbs/t_0.jpg"
+  },
+  {
+   "id": 1,
+   "parent": 0,
+   "children": [
+    2,
+    6,
+    82,
+    97
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 36,
+   "Q": 1.0,
+   "image": "nodes/n_1.jpg",
+   "video": "videos/e_1.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 6,
+    "failed": {},
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.36,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 1,
+   "card": "cards/c_1.jpg",
+   "thumb": "thumbs/t_1.jpg"
+  },
+  {
+   "id": 7,
+   "parent": 0,
+   "children": [
+    8,
+    78,
+    118
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 36,
+   "Q": 1.0,
+   "image": "nodes/n_7.jpg",
+   "video": "videos/e_7.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 6,
+    "failed": {},
+    "not_shown": 3
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.69,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 1,
+   "card": "cards/c_7.jpg",
+   "thumb": "thumbs/t_7.jpg"
+  },
+  {
+   "id": 11,
+   "parent": 0,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 18,
+   "Q": 0.6667,
+   "image": "nodes/n_11.jpg",
+   "video": "videos/e_11.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 4,
+    "failed": {
+     "no_contact_or_offset": 4
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.12,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 1,
+   "card": "cards/c_11.jpg",
+   "thumb": "thumbs/t_11.jpg"
+  },
+  {
+   "id": 42,
+   "parent": 0,
+   "children": [
+    43,
+    67,
+    98,
+    114
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 36,
+   "Q": 1.0,
+   "image": "nodes/n_42.jpg",
+   "video": "videos/e_42.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 6,
+    "failed": {},
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.94,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 1,
+   "card": "cards/c_42.jpg",
+   "thumb": "thumbs/t_42.jpg"
+  },
+  {
+   "id": 2,
+   "parent": 1,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_2.jpg",
+   "video": "videos/e_2.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.72,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_2.jpg",
+   "thumb": "thumbs/t_2.jpg"
+  },
+  {
+   "id": 6,
+   "parent": 1,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_6.jpg",
+   "video": "videos/e_6.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.34,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_6.jpg",
+   "thumb": "thumbs/t_6.jpg"
+  },
+  {
+   "id": 82,
+   "parent": 1,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_82.jpg",
+   "video": "videos/e_82.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.39,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_82.jpg",
+   "thumb": "thumbs/t_82.jpg"
+  },
+  {
+   "id": 97,
+   "parent": 1,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_97.jpg",
+   "video": "videos/e_97.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.93,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_97.jpg",
+   "thumb": "thumbs/t_97.jpg"
+  },
+  {
+   "id": 8,
+   "parent": 7,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_8.jpg",
+   "video": "videos/e_8.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.57,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_8.jpg",
+   "thumb": "thumbs/t_8.jpg"
+  },
+  {
+   "id": 78,
+   "parent": 7,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_78.jpg",
+   "video": "videos/e_78.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.49,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_78.jpg",
+   "thumb": "thumbs/t_78.jpg"
+  },
+  {
+   "id": 118,
+   "parent": 7,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_118.jpg",
+   "video": "videos/e_118.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 1.0,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_118.jpg",
+   "thumb": "thumbs/t_118.jpg"
+  },
+  {
+   "id": 43,
+   "parent": 42,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_43.jpg",
+   "video": "videos/e_43.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.9,
+    "replicates": 4,
+    "steps": 220
+   },
+   "depth": 2,
+   "card": "cards/c_43.jpg",
+   "thumb": "thumbs/t_43.jpg"
+  },
+  {
+   "id": 67,
+   "parent": 42,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_67.jpg",
+   "video": "videos/e_67.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.88,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_67.jpg",
+   "thumb": "thumbs/t_67.jpg"
+  },
+  {
+   "id": 98,
+   "parent": 42,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_98.jpg",
+   "video": "videos/e_98.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.98,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_98.jpg",
+   "thumb": "thumbs/t_98.jpg"
+  },
+  {
+   "id": 114,
+   "parent": 42,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 1.0,
+   "image": "nodes/n_114.jpg",
+   "video": "videos/e_114.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.77,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_114.jpg",
+   "thumb": "thumbs/t_114.jpg"
+  }
+ ],
+ "summary": {
+  "tree_nodes": 184,
+  "valid_edges": 15,
+  "failed_edges": 0,
+  "goal_nodes": 11,
+  "goal_nodes_full_tree": 35,
+  "dropped_unmatched": {
+   "valid": 2,
+   "failed": 0
+  }
+ },
+ "render": {
+  "shader": "rt",
+  "size": 512
+ }
+}

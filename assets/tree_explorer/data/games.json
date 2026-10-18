@@ -1,0 +1,12 @@
+[
+  {"id": "shelf_11", "title": "Shelf packing · A",
+   "blurb": "Pack four objects into the shelf. DISCO's search tried 2,438 actions in this scene. Three of the first moves shown here can still lead to a full shelf; four of them only lead to dead ends."},
+  {"id": "shelf_5", "title": "Shelf packing · B",
+   "blurb": "Pack four objects into the shelf. Of the 4,193 actions DISCO's search tried here, exactly one sequence packs everything, and only one of the ten first moves leads to it. Can you find it?"},
+  {"id": "stacking_39", "title": "Stacking · A",
+   "blurb": "Stack three objects into a single tower. Three of the four first moves shown here can lead to a full tower."},
+  {"id": "stacking_48", "title": "Stacking · B",
+   "blurb": "Stack four objects into a single tower. Of the seven first moves shown, one can be followed to a full tower here; three others also reached towers in the search, through later motions that were not saved."},
+  {"id": "stacking_11", "title": "Stacking · C",
+   "blurb": "Stack four objects into a single tower. DISCO's search tried 807 actions here and completed the tower 72 times. Of the seven first moves shown, one can be followed to a full tower here; the other six also reached towers in the search, through later motions that were not saved."}
+]

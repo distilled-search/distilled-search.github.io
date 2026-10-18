@@ -1,0 +1,7057 @@
+{
+ "task": "shelf",
+ "env": 11,
+ "num_objects": 4,
+ "fps": 30,
+ "stride": 2,
+ "object_names": [
+  "6072a4739c12979baa69dfdc5532bb13",
+  "26780889da30bdb9b88d31093d1f51f7",
+  "72692864abdfa144d24546afc5de2582",
+  "3387e118aec3bcc17234af9602711ad"
+ ],
+ "root": 0,
+ "nodes": [
+  {
+   "id": 0,
+   "parent": null,
+   "children": [
+    5,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": null,
+   "progress": 0,
+   "visits": 100,
+   "Q": 0.0,
+   "image": "nodes/n_0.jpg",
+   "video": null,
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 4,
+     "grasp_execution": 8,
+     "pick_failed": 8,
+     "place_motion_plan": 2,
+     "place_execution": 1
+    },
+    "not_shown": 0
+   },
+   "replay": null,
+   "depth": 0,
+   "thumb": "thumbs/t_0.jpg"
+  },
+  {
+   "id": 22,
+   "parent": 0,
+   "children": [
+    551,
+    561,
+    567,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 1,
+   "visits": 18,
+   "Q": 0.9227,
+   "image": "nodes/n_22.jpg",
+   "video": "videos/e_22.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 6,
+     "grasp_execution": 10,
+     "place_motion_plan": 6,
+     "place_execution": 4
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.69,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_22.jpg",
+   "thumb": "thumbs/t_22.jpg"
+  },
+  {
+   "id": 24,
+   "parent": 0,
+   "children": [
+    685,
+    686,
+    696,
+    697,
+    700,
+    701,
+    702,
+    703
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 1,
+   "visits": 13,
+   "Q": 0.8014,
+   "image": "nodes/n_24.jpg",
+   "video": "videos/e_24.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 6,
+     "pick_failed": 6,
+     "place_execution": 9,
+     "place_motion_plan": 5
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.09,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_24.jpg",
+   "thumb": "thumbs/t_24.jpg"
+  },
+  {
+   "id": 26,
+   "parent": 0,
+   "children": [
+    262,
+    278,
+    282,
+    285,
+    286
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 14,
+   "Q": 0.7993,
+   "image": "nodes/n_26.jpg",
+   "video": "videos/e_26.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 5,
+     "grasp_execution": 11,
+     "pick_failed": 5,
+     "place_execution": 4,
+     "place_motion_plan": 3
+    },
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 9.16,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_26.jpg",
+   "thumb": "thumbs/t_26.jpg"
+  },
+  {
+   "id": 27,
+   "parent": 0,
+   "children": [
+    359,
+    369,
+    370,
+    371
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 9,
+   "Q": 0.6009,
+   "image": "nodes/n_27.jpg",
+   "video": "videos/e_27.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 6,
+     "grasp_execution": 10,
+     "place_motion_plan": 12
+    },
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 4.17,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_27.jpg",
+   "thumb": "thumbs/t_27.jpg"
+  },
+  {
+   "id": 28,
+   "parent": 0,
+   "children": [
+    428,
+    433,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 12,
+   "Q": 0.7581,
+   "image": "nodes/n_28.jpg",
+   "video": "videos/e_28.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 11,
+     "grasp_execution": 5,
+     "place_execution": 5,
+     "place_motion_plan": 6
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 4.52,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_28.jpg",
+   "thumb": "thumbs/t_28.jpg"
+  },
+  {
+   "id": 29,
+   "parent": 0,
+   "children": [
+    144,
+    155,
+    156,
+    157,
+    158,
+    159
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 11,
+   "Q": 0.7026,
+   "image": "nodes/n_29.jpg",
+   "video": "videos/e_29.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 15,
+     "grasp_execution": 6,
+     "pick_failed": 5,
+     "place_execution": 2
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 3.29,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_29.jpg",
+   "thumb": "thumbs/t_29.jpg"
+  },
+  {
+   "id": 30,
+   "parent": 0,
+   "children": [
+    225
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 4,
+   "Q": 0.1406,
+   "image": "nodes/n_30.jpg",
+   "video": "videos/e_30.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 22,
+     "pick_failed": 10
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 4.43,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_30.jpg",
+   "thumb": "thumbs/t_30.jpg"
+  },
+  {
+   "id": 31,
+   "parent": 0,
+   "children": [
+    75,
+    92,
+    94,
+    96
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 15,
+   "Q": 0.8471,
+   "image": "nodes/n_31.jpg",
+   "video": "videos/e_31.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 10,
+     "grasp_execution": 12,
+     "pick_failed": 5,
+     "place_motion_plan": 3
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/16",
+    "err_cm": 2.28,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_31.jpg",
+   "thumb": "thumbs/t_31.jpg"
+  },
+  {
+   "id": 32,
+   "parent": 0,
+   "children": [
+    43,
+    60
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 1,
+   "visits": 4,
+   "Q": 0.1406,
+   "image": "nodes/n_32.jpg",
+   "video": "videos/e_32.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 10,
+     "grasp_execution": 12,
+     "pick_failed": 5,
+     "place_motion_plan": 5
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 8.48,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 1,
+   "card": "cards/c_32.jpg",
+   "thumb": "thumbs/t_32.jpg"
+  },
+  {
+   "id": 571,
+   "parent": 22,
+   "children": [
+    1762,
+    1770,
+    1774,
+    1785
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_571.jpg",
+   "video": "videos/e_571.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 8,
+     "place_motion_plan": 15
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 5.74,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_571.jpg",
+   "thumb": "thumbs/t_571.jpg"
+  },
+  {
+   "id": 572,
+   "parent": 22,
+   "children": [
+    1121,
+    1129,
+    1135,
+    1139
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_572.jpg",
+   "video": "videos/e_572.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 7,
+     "place_motion_plan": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/16",
+    "err_cm": 3.13,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_572.jpg",
+   "thumb": "thumbs/t_572.jpg"
+  },
+  {
+   "id": 573,
+   "parent": 22,
+   "children": [
+    1538,
+    1546,
+    1554
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.1406,
+   "image": "nodes/n_573.jpg",
+   "video": "videos/e_573.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 8,
+     "place_motion_plan": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 6.22,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_573.jpg",
+   "thumb": "thumbs/t_573.jpg"
+  },
+  {
+   "id": 574,
+   "parent": 22,
+   "children": [
+    833,
+    841,
+    842,
+    849,
+    851
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 4,
+   "Q": 0.5553,
+   "image": "nodes/n_574.jpg",
+   "video": "videos/e_574.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 7,
+     "place_motion_plan": 15
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 8.78,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_574.jpg",
+   "thumb": "thumbs/t_574.jpg"
+  },
+  {
+   "id": 575,
+   "parent": 22,
+   "children": [
+    1282,
+    1306,
+    1308,
+    1309
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_575.jpg",
+   "video": "videos/e_575.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 24,
+     "place_motion_plan": 5
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "7/32",
+    "err_cm": 3.64,
+    "replicates": 32,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_575.jpg",
+   "thumb": "thumbs/t_575.jpg"
+  },
+  {
+   "id": 576,
+   "parent": 22,
+   "children": [
+    577,
+    585,
+    586,
+    595,
+    603
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_576.jpg",
+   "video": "videos/e_576.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_motion_plan": 12,
+     "place_execution": 10
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 2.91,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_576.jpg",
+   "thumb": "thumbs/t_576.jpg"
+  },
+  {
+   "id": 696,
+   "parent": 24,
+   "children": [
+    1057,
+    1065,
+    1066,
+    1071,
+    1074,
+    1075,
+    1083
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.3479,
+   "image": "nodes/n_696.jpg",
+   "video": "videos/e_696.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 5,
+     "place_motion_plan": 15
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 5.47,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_696.jpg",
+   "thumb": "thumbs/t_696.jpg"
+  },
+  {
+   "id": 697,
+   "parent": 24,
+   "children": [
+    1698,
+    1714,
+    1716,
+    1724,
+    1729
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_697.jpg",
+   "video": "videos/e_697.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_motion_plan": 13
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 1.52,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_697.jpg",
+   "thumb": "thumbs/t_697.jpg"
+  },
+  {
+   "id": 700,
+   "parent": 24,
+   "children": [
+    1490,
+    1498,
+    1499
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 1,
+   "Q": 0.1406,
+   "image": "nodes/n_700.jpg",
+   "video": "videos/e_700.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 16,
+     "grasp_execution": 8,
+     "place_execution": 5,
+     "place_motion_plan": 3
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 7.14,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_700.jpg",
+   "thumb": "thumbs/t_700.jpg"
+  },
+  {
+   "id": 701,
+   "parent": 24,
+   "children": [
+    1890,
+    1891,
+    1897,
+    1898,
+    1899,
+    1901,
+    1902,
+    1903,
+    1920
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.1874,
+   "image": "nodes/n_701.jpg",
+   "video": "videos/e_701.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "place_execution": 9,
+     "place_motion_plan": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 2.1,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_701.jpg",
+   "thumb": "thumbs/t_701.jpg"
+  },
+  {
+   "id": 702,
+   "parent": 24,
+   "children": [
+    713,
+    721,
+    722,
+    724,
+    729,
+    730,
+    731
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.1874,
+   "image": "nodes/n_702.jpg",
+   "video": "videos/e_702.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "grasp_execution": 8,
+     "place_execution": 4,
+     "place_motion_plan": 6
+    },
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 8.34,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_702.jpg",
+   "thumb": "thumbs/t_702.jpg"
+  },
+  {
+   "id": 703,
+   "parent": 24,
+   "children": [
+    769,
+    785,
+    786,
+    799
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.5085,
+   "image": "nodes/n_703.jpg",
+   "video": "videos/e_703.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 1,
+     "place_motion_plan": 14
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 1.36,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_703.jpg",
+   "thumb": "thumbs/t_703.jpg"
+  },
+  {
+   "id": 285,
+   "parent": 26,
+   "children": [
+    289,
+    313,
+    316
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 6,
+   "Q": 0.8594,
+   "image": "nodes/n_285.jpg",
+   "video": "videos/e_285.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 24,
+     "place_execution": 7
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 14.51,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_285.jpg",
+   "thumb": "thumbs/t_285.jpg"
+  },
+  {
+   "id": 286,
+   "parent": 26,
+   "children": [
+    1025,
+    1049
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.4447,
+   "image": "nodes/n_286.jpg",
+   "video": "videos/e_286.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "pick_failed": 8,
+     "place_motion_plan": 8
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 15.47,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_286.jpg",
+   "thumb": "thumbs/t_286.jpg"
+  },
+  {
+   "id": 369,
+   "parent": 27,
+   "children": [
+    1386
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4447,
+   "image": "nodes/n_369.jpg",
+   "video": "videos/e_369.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "grasp_execution": 16,
+     "pick_failed": 8
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 19.21,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_369.jpg",
+   "thumb": "thumbs/t_369.jpg"
+  },
+  {
+   "id": 370,
+   "parent": 27,
+   "children": [
+    1634,
+    1642,
+    1645
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4447,
+   "image": "nodes/n_370.jpg",
+   "video": "videos/e_370.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "place_execution": 7,
+     "place_motion_plan": 17
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 3.75,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_370.jpg",
+   "thumb": "thumbs/t_370.jpg"
+  },
+  {
+   "id": 438,
+   "parent": 28,
+   "children": [
+    457,
+    465,
+    468,
+    473,
+    476
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.8126,
+   "image": "nodes/n_438.jpg",
+   "video": "videos/e_438.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "grasp_execution": 8,
+     "place_execution": 8,
+     "place_motion_plan": 6
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 6.14,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_438.jpg",
+   "thumb": "thumbs/t_438.jpg"
+  },
+  {
+   "id": 440,
+   "parent": 28,
+   "children": [
+    1506,
+    1530
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4447,
+   "image": "nodes/n_440.jpg",
+   "video": "videos/e_440.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "pick_failed": 8,
+     "place_motion_plan": 8
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 4.42,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_440.jpg",
+   "thumb": "thumbs/t_440.jpg"
+  },
+  {
+   "id": 441,
+   "parent": 28,
+   "children": [
+    2130,
+    2136,
+    2137
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.7368,
+   "image": "nodes/n_441.jpg",
+   "video": "videos/e_441.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 16,
+     "place_execution": 6,
+     "place_motion_plan": 8
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 9.24,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_441.jpg",
+   "thumb": "thumbs/t_441.jpg"
+  },
+  {
+   "id": 442,
+   "parent": 28,
+   "children": [
+    1834,
+    1835,
+    1836,
+    1838,
+    1841,
+    1852,
+    1855,
+    1856
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4915,
+   "image": "nodes/n_442.jpg",
+   "video": "videos/e_442.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 8,
+     "place_execution": 11,
+     "place_motion_plan": 7
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 4.48,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_442.jpg",
+   "thumb": "thumbs/t_442.jpg"
+  },
+  {
+   "id": 443,
+   "parent": 28,
+   "children": [
+    1185,
+    1209,
+    1212
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4447,
+   "image": "nodes/n_443.jpg",
+   "video": "videos/e_443.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 8,
+     "pick_failed": 16,
+     "place_execution": 4,
+     "place_motion_plan": 4
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 4.87,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_443.jpg",
+   "thumb": "thumbs/t_443.jpg"
+  },
+  {
+   "id": 155,
+   "parent": 29,
+   "children": [
+    2002,
+    2003
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.3275,
+   "image": "nodes/n_155.jpg",
+   "video": "videos/e_155.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "pick_failed": 8,
+     "place_motion_plan": 11,
+     "place_execution": 3
+    },
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 11.78,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_155.jpg",
+   "thumb": "thumbs/t_155.jpg"
+  },
+  {
+   "id": 157,
+   "parent": 29,
+   "children": [
+    1586,
+    1587,
+    1588,
+    1591,
+    1592
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 3,
+   "Q": 0.4915,
+   "image": "nodes/n_157.jpg",
+   "video": "videos/e_157.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "pick_failed": 8,
+     "place_motion_plan": 11
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 6.35,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_157.jpg",
+   "thumb": "thumbs/t_157.jpg"
+  },
+  {
+   "id": 158,
+   "parent": 29,
+   "children": [
+    1273,
+    1274,
+    1277,
+    1278,
+    1279,
+    1280
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 4,
+   "Q": 0.7674,
+   "image": "nodes/n_158.jpg",
+   "video": "videos/e_158.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "pick_failed": 16,
+     "place_motion_plan": 3,
+     "place_execution": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 9.82,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_158.jpg",
+   "thumb": "thumbs/t_158.jpg"
+  },
+  {
+   "id": 159,
+   "parent": 29,
+   "children": [
+    177,
+    178,
+    179
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 2,
+   "Q": 0.4915,
+   "image": "nodes/n_159.jpg",
+   "video": "videos/e_159.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 8,
+     "pick_failed": 8,
+     "place_motion_plan": 12,
+     "place_execution": 3
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "5/16",
+    "err_cm": 6.86,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_159.jpg",
+   "thumb": "thumbs/t_159.jpg"
+  },
+  {
+   "id": 94,
+   "parent": 31,
+   "children": [
+    961,
+    977,
+    978,
+    979,
+    983
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 2,
+   "progress": 2,
+   "visits": 11,
+   "Q": 0.8297,
+   "image": "nodes/n_94.jpg",
+   "video": "videos/e_94.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 1,
+     "place_motion_plan": 12
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 2.18,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_94.jpg",
+   "thumb": "thumbs/t_94.jpg"
+  },
+  {
+   "id": 96,
+   "parent": 31,
+   "children": [
+    113
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 2,
+   "visits": 4,
+   "Q": 0.368,
+   "image": "nodes/n_96.jpg",
+   "video": "videos/e_96.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 16,
+     "grasp_execution": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 3.31,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 2,
+   "card": "cards/c_96.jpg",
+   "thumb": "thumbs/t_96.jpg"
+  },
+  {
+   "id": 1785,
+   "parent": 571,
+   "children": [
+    1794,
+    1810,
+    1811
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.368,
+   "image": "nodes/n_1785.jpg",
+   "video": "videos/e_1785.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 7,
+     "place_motion_plan": 9
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 5.72,
+    "replicates": 4,
+    "steps": 204
+   },
+   "depth": 3,
+   "card": "cards/c_1785.jpg",
+   "thumb": "thumbs/t_1785.jpg"
+  },
+  {
+   "id": 1139,
+   "parent": 572,
+   "children": [
+    1153,
+    1169,
+    1171
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.368,
+   "image": "nodes/n_1139.jpg",
+   "video": "videos/e_1139.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_motion_plan": 8,
+     "place_execution": 8
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 7.35,
+    "replicates": 4,
+    "steps": 191
+   },
+   "depth": 3,
+   "card": "cards/c_1139.jpg",
+   "thumb": "thumbs/t_1139.jpg"
+  },
+  {
+   "id": 842,
+   "parent": 574,
+   "children": [
+    881,
+    890
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.4147,
+   "image": "nodes/n_842.jpg",
+   "video": "videos/e_842.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 16,
+     "place_motion_plan": 15
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 9.46,
+    "replicates": 4,
+    "steps": 204
+   },
+   "depth": 3,
+   "card": "cards/c_842.jpg",
+   "thumb": "thumbs/t_842.jpg"
+  },
+  {
+   "id": 851,
+   "parent": 574,
+   "children": [
+    1954,
+    1970,
+    1971,
+    1975,
+    1981
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.4147,
+   "image": "nodes/n_851.jpg",
+   "video": "videos/e_851.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 12
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 7.43,
+    "replicates": 4,
+    "steps": 201
+   },
+   "depth": 3,
+   "card": "cards/c_851.jpg",
+   "thumb": "thumbs/t_851.jpg"
+  },
+  {
+   "id": 1308,
+   "parent": 575,
+   "children": [
+    2245
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1308.jpg",
+   "video": "videos/e_1308.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 6.67,
+    "replicates": 4,
+    "steps": 204
+   },
+   "depth": 3,
+   "card": "cards/c_1308.jpg",
+   "thumb": "thumbs/t_1308.jpg"
+  },
+  {
+   "id": 1309,
+   "parent": 575,
+   "children": [
+    1314
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1309.jpg",
+   "video": "videos/e_1309.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 13.17,
+    "replicates": 4,
+    "steps": 204
+   },
+   "depth": 3,
+   "card": "cards/c_1309.jpg",
+   "thumb": "thumbs/t_1309.jpg"
+  },
+  {
+   "id": 595,
+   "parent": 576,
+   "children": [
+    641,
+    657,
+    659
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_595.jpg",
+   "video": "videos/e_595.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 15,
+     "place_motion_plan": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 4.72,
+    "replicates": 4,
+    "steps": 204
+   },
+   "depth": 3,
+   "card": "cards/c_595.jpg",
+   "thumb": "thumbs/t_595.jpg"
+  },
+  {
+   "id": 603,
+   "parent": 576,
+   "children": [
+    609
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.368,
+   "image": "nodes/n_603.jpg",
+   "video": "videos/e_603.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 7.86,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_603.jpg",
+   "thumb": "thumbs/t_603.jpg"
+  },
+  {
+   "id": 1071,
+   "parent": 696,
+   "children": [
+    1089
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1071.jpg",
+   "video": "videos/e_1071.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "place_motion_plan": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/32",
+    "err_cm": 5.3,
+    "replicates": 32,
+    "steps": 176
+   },
+   "depth": 3,
+   "card": "cards/c_1071.jpg",
+   "thumb": "thumbs/t_1071.jpg"
+  },
+  {
+   "id": 1074,
+   "parent": 696,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1074.jpg",
+   "video": "videos/e_1074.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 4.84,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1074.jpg",
+   "thumb": "thumbs/t_1074.jpg"
+  },
+  {
+   "id": 1075,
+   "parent": 696,
+   "children": [
+    2406,
+    2422,
+    2431
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1075.jpg",
+   "video": "videos/e_1075.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 11,
+     "place_motion_plan": 5
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 15.27,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1075.jpg",
+   "thumb": "thumbs/t_1075.jpg"
+  },
+  {
+   "id": 1083,
+   "parent": 696,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1083.jpg",
+   "video": "videos/e_1083.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 16.59,
+    "replicates": 4,
+    "steps": 251
+   },
+   "depth": 3,
+   "card": "cards/c_1083.jpg",
+   "thumb": "thumbs/t_1083.jpg"
+  },
+  {
+   "id": 1716,
+   "parent": 697,
+   "children": [
+    1730
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1716.jpg",
+   "video": "videos/e_1716.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 3.86,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1716.jpg",
+   "thumb": "thumbs/t_1716.jpg"
+  },
+  {
+   "id": 1724,
+   "parent": 697,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1724.jpg",
+   "video": "videos/e_1724.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "expansion_crashed": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 3.29,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1724.jpg",
+   "thumb": "thumbs/t_1724.jpg"
+  },
+  {
+   "id": 1729,
+   "parent": 697,
+   "children": [
+    2179,
+    2195,
+    2198
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_1729.jpg",
+   "video": "videos/e_1729.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 13,
+     "place_motion_plan": 3
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 4.84,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1729.jpg",
+   "thumb": "thumbs/t_1729.jpg"
+  },
+  {
+   "id": 1891,
+   "parent": 701,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1891.jpg",
+   "video": "videos/e_1891.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 2.29,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1891.jpg",
+   "thumb": "thumbs/t_1891.jpg"
+  },
+  {
+   "id": 1897,
+   "parent": 701,
+   "children": [
+    1938
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1897.jpg",
+   "video": "videos/e_1897.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 16,
+     "place_motion_plan": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 18.67,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1897.jpg",
+   "thumb": "thumbs/t_1897.jpg"
+  },
+  {
+   "id": 1898,
+   "parent": 701,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1898.jpg",
+   "video": "videos/e_1898.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/16",
+    "err_cm": 6.85,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1898.jpg",
+   "thumb": "thumbs/t_1898.jpg"
+  },
+  {
+   "id": 1899,
+   "parent": 701,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1899.jpg",
+   "video": "videos/e_1899.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 16,
+     "pick_failed": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 8.47,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1899.jpg",
+   "thumb": "thumbs/t_1899.jpg"
+  },
+  {
+   "id": 1901,
+   "parent": 701,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0002,
+   "image": "nodes/n_1901.jpg",
+   "video": "videos/e_1901.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/16",
+    "err_cm": 9.98,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1901.jpg",
+   "thumb": "thumbs/t_1901.jpg"
+  },
+  {
+   "id": 1902,
+   "parent": 701,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1902.jpg",
+   "video": "videos/e_1902.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 13.67,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1902.jpg",
+   "thumb": "thumbs/t_1902.jpg"
+  },
+  {
+   "id": 1920,
+   "parent": 701,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1920.jpg",
+   "video": "videos/e_1920.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 1.85,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1920.jpg",
+   "thumb": "thumbs/t_1920.jpg"
+  },
+  {
+   "id": 721,
+   "parent": 702,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_721.jpg",
+   "video": "videos/e_721.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 13.13,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_721.jpg",
+   "thumb": "thumbs/t_721.jpg"
+  },
+  {
+   "id": 722,
+   "parent": 702,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_722.jpg",
+   "video": "videos/e_722.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 14.13,
+    "replicates": 4,
+    "steps": 176
+   },
+   "depth": 3,
+   "card": "cards/c_722.jpg",
+   "thumb": "thumbs/t_722.jpg"
+  },
+  {
+   "id": 729,
+   "parent": 702,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_729.jpg",
+   "video": "videos/e_729.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 8.18,
+    "replicates": 4,
+    "steps": 176
+   },
+   "depth": 3,
+   "card": "cards/c_729.jpg",
+   "thumb": "thumbs/t_729.jpg"
+  },
+  {
+   "id": 730,
+   "parent": 702,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_730.jpg",
+   "video": "videos/e_730.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/16",
+    "err_cm": 11.34,
+    "replicates": 16,
+    "steps": 179
+   },
+   "depth": 3,
+   "card": "cards/c_730.jpg",
+   "thumb": "thumbs/t_730.jpg"
+  },
+  {
+   "id": 799,
+   "parent": 703,
+   "children": [
+    801
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.368,
+   "image": "nodes/n_799.jpg",
+   "video": "videos/e_799.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 3.56,
+    "replicates": 4,
+    "steps": 176
+   },
+   "depth": 3,
+   "card": "cards/c_799.jpg",
+   "thumb": "thumbs/t_799.jpg"
+  },
+  {
+   "id": 316,
+   "parent": 285,
+   "children": [
+    321,
+    335,
+    337
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 6,
+   "Q": 0.4147,
+   "image": "nodes/n_316.jpg",
+   "video": "videos/e_316.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "place_motion_plan": 29,
+     "place_execution": 1
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 13.42,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_316.jpg",
+   "thumb": "thumbs/t_316.jpg"
+  },
+  {
+   "id": 473,
+   "parent": 438,
+   "children": [
+    513,
+    529,
+    530
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.368,
+   "image": "nodes/n_473.jpg",
+   "video": "videos/e_473.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_motion_plan": 6,
+     "place_execution": 10
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 6.92,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_473.jpg",
+   "thumb": "thumbs/t_473.jpg"
+  },
+  {
+   "id": 476,
+   "parent": 438,
+   "children": [
+    481
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.368,
+   "image": "nodes/n_476.jpg",
+   "video": "videos/e_476.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/4",
+    "err_cm": 11.38,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_476.jpg",
+   "thumb": "thumbs/t_476.jpg"
+  },
+  {
+   "id": 2136,
+   "parent": 441,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_2136.jpg",
+   "video": "videos/e_2136.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "expansion_crashed": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/32",
+    "err_cm": 6.04,
+    "replicates": 32,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_2136.jpg",
+   "thumb": "thumbs/t_2136.jpg"
+  },
+  {
+   "id": 1834,
+   "parent": 442,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1834.jpg",
+   "video": "videos/e_1834.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/16",
+    "err_cm": 4.32,
+    "replicates": 16,
+    "steps": 194
+   },
+   "depth": 3,
+   "card": "cards/c_1834.jpg",
+   "thumb": "thumbs/t_1834.jpg"
+  },
+  {
+   "id": 1836,
+   "parent": 442,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1836.jpg",
+   "video": "videos/e_1836.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 6.92,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1836.jpg",
+   "thumb": "thumbs/t_1836.jpg"
+  },
+  {
+   "id": 1838,
+   "parent": 442,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1838.jpg",
+   "video": "videos/e_1838.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "ik_infeasible": 16,
+     "pick_failed": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/16",
+    "err_cm": 6.82,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_1838.jpg",
+   "thumb": "thumbs/t_1838.jpg"
+  },
+  {
+   "id": 1852,
+   "parent": 442,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0002,
+   "image": "nodes/n_1852.jpg",
+   "video": "videos/e_1852.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "8/16",
+    "err_cm": 3.49,
+    "replicates": 16,
+    "steps": 187
+   },
+   "depth": 3,
+   "card": "cards/c_1852.jpg",
+   "thumb": "thumbs/t_1852.jpg"
+  },
+  {
+   "id": 1855,
+   "parent": 442,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1855.jpg",
+   "video": "videos/e_1855.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 6.45,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1855.jpg",
+   "thumb": "thumbs/t_1855.jpg"
+  },
+  {
+   "id": 1856,
+   "parent": 442,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1856.jpg",
+   "video": "videos/e_1856.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 4.77,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1856.jpg",
+   "thumb": "thumbs/t_1856.jpg"
+  },
+  {
+   "id": 1587,
+   "parent": 157,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1587.jpg",
+   "video": "videos/e_1587.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 8.82,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1587.jpg",
+   "thumb": "thumbs/t_1587.jpg"
+  },
+  {
+   "id": 1588,
+   "parent": 157,
+   "children": [
+    1602
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.4447,
+   "image": "nodes/n_1588.jpg",
+   "video": "videos/e_1588.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 32
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "9/16",
+    "err_cm": 6.88,
+    "replicates": 16,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1588.jpg",
+   "thumb": "thumbs/t_1588.jpg"
+  },
+  {
+   "id": 1591,
+   "parent": 157,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.4447,
+   "image": "nodes/n_1591.jpg",
+   "video": "videos/e_1591.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "expansion_crashed": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 7.35,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1591.jpg",
+   "thumb": "thumbs/t_1591.jpg"
+  },
+  {
+   "id": 1592,
+   "parent": 157,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.4447,
+   "image": "nodes/n_1592.jpg",
+   "video": "videos/e_1592.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "expansion_crashed": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 8.48,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1592.jpg",
+   "thumb": "thumbs/t_1592.jpg"
+  },
+  {
+   "id": 1274,
+   "parent": 158,
+   "children": [
+    2293,
+    2295,
+    2298
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.8126,
+   "image": "nodes/n_1274.jpg",
+   "video": "videos/e_1274.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "pick_failed": 16,
+     "place_motion_plan": 14,
+     "place_execution": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 7.35,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1274.jpg",
+   "thumb": "thumbs/t_1274.jpg"
+  },
+  {
+   "id": 1277,
+   "parent": 158,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0001,
+   "image": "nodes/n_1277.jpg",
+   "video": "videos/e_1277.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 9.11,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1277.jpg",
+   "thumb": "thumbs/t_1277.jpg"
+  },
+  {
+   "id": 1278,
+   "parent": 158,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.4447,
+   "image": "nodes/n_1278.jpg",
+   "video": "videos/e_1278.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "expansion_crashed": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 5.28,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1278.jpg",
+   "thumb": "thumbs/t_1278.jpg"
+  },
+  {
+   "id": 1279,
+   "parent": 158,
+   "children": [],
+   "status": "unexplored",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1279.jpg",
+   "video": "videos/e_1279.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 8.6,
+    "replicates": 4,
+    "steps": 272
+   },
+   "depth": 3,
+   "card": "cards/c_1279.jpg",
+   "thumb": "thumbs/t_1279.jpg"
+  },
+  {
+   "id": 177,
+   "parent": 159,
+   "children": [
+    193,
+    209
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.4447,
+   "image": "nodes/n_177.jpg",
+   "video": "videos/e_177.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_motion_plan": 16
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 15.46,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_177.jpg",
+   "thumb": "thumbs/t_177.jpg"
+  },
+  {
+   "id": 977,
+   "parent": 94,
+   "children": [
+    1346,
+    1362,
+    1367
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.4447,
+   "image": "nodes/n_977.jpg",
+   "video": "videos/e_977.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_motion_plan": 12,
+     "place_execution": 4
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/32",
+    "err_cm": 4.18,
+    "replicates": 32,
+    "steps": 176
+   },
+   "depth": 3,
+   "card": "cards/c_977.jpg",
+   "thumb": "thumbs/t_977.jpg"
+  },
+  {
+   "id": 983,
+   "parent": 94,
+   "children": [
+    993,
+    1009,
+    1010
+   ],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 4,
+   "Q": 0.4447,
+   "image": "nodes/n_983.jpg",
+   "video": "videos/e_983.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 32,
+    "failed": {
+     "grasp_execution": 16,
+     "place_execution": 9,
+     "place_motion_plan": 7
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 1.86,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 3,
+   "card": "cards/c_983.jpg",
+   "thumb": "thumbs/t_983.jpg"
+  },
+  {
+   "id": 890,
+   "parent": 842,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 2,
+   "progress": 4,
+   "visits": 2,
+   "Q": 0.368,
+   "image": "nodes/n_890.jpg",
+   "video": "videos/e_890.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 9.31,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 4,
+   "card": "cards/c_890.jpg",
+   "thumb": "thumbs/t_890.jpg"
+  },
+  {
+   "id": 1970,
+   "parent": 851,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 4,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1970.jpg",
+   "video": "videos/e_1970.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/32",
+    "err_cm": 8.12,
+    "replicates": 32,
+    "steps": 181
+   },
+   "depth": 4,
+   "card": "cards/c_1970.jpg",
+   "thumb": "thumbs/t_1970.jpg"
+  },
+  {
+   "id": 1975,
+   "parent": 851,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 4,
+   "visits": 1,
+   "Q": 0.0468,
+   "image": "nodes/n_1975.jpg",
+   "video": "videos/e_1975.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/32",
+    "err_cm": 12.87,
+    "replicates": 32,
+    "steps": 173
+   },
+   "depth": 4,
+   "card": "cards/c_1975.jpg",
+   "thumb": "thumbs/t_1975.jpg"
+  },
+  {
+   "id": 1981,
+   "parent": 851,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 4,
+   "visits": 0,
+   "Q": 1.0,
+   "image": "nodes/n_1981.jpg",
+   "video": "videos/e_1981.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "1/16",
+    "err_cm": 4.97,
+    "replicates": 16,
+    "steps": 173
+   },
+   "depth": 4,
+   "card": "cards/c_1981.jpg",
+   "thumb": "thumbs/t_1981.jpg"
+  },
+  {
+   "id": 335,
+   "parent": 316,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 2,
+   "progress": 4,
+   "visits": 3,
+   "Q": 0.368,
+   "image": "nodes/n_335.jpg",
+   "video": "videos/e_335.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 18.57,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 4,
+   "card": "cards/c_335.jpg",
+   "thumb": "thumbs/t_335.jpg"
+  },
+  {
+   "id": 2298,
+   "parent": 1274,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 2,
+   "progress": 4,
+   "visits": 3,
+   "Q": 0.368,
+   "image": "nodes/n_2298.jpg",
+   "video": "videos/e_2298.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "2/4",
+    "err_cm": 7.58,
+    "replicates": 4,
+    "steps": 173
+   },
+   "depth": 4,
+   "card": "cards/c_2298.jpg",
+   "thumb": "thumbs/t_2298.jpg"
+  },
+  {
+   "id": 5,
+   "parent": 0,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_5.jpg",
+   "video": "videos/e_5.mp4",
+   "outcome_image": "outcomes/o_5.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 116
+   },
+   "depth": 1,
+   "card": "cards/c_5.jpg",
+   "thumb": "thumbs/t_5.jpg",
+   "outcome_thumb": "thumbs/o_5.jpg"
+  },
+  {
+   "id": 21,
+   "parent": 0,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_21.jpg",
+   "video": "videos/e_21.mp4",
+   "outcome_image": "outcomes/o_21.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 116
+   },
+   "depth": 1,
+   "card": "cards/c_21.jpg",
+   "thumb": "thumbs/t_21.jpg",
+   "outcome_thumb": "thumbs/o_21.jpg"
+  },
+  {
+   "id": 25,
+   "parent": 0,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 3,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_25.jpg",
+   "video": "videos/e_25.mp4",
+   "outcome_image": "outcomes/o_25.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 116
+   },
+   "depth": 1,
+   "card": "cards/c_25.jpg",
+   "thumb": "thumbs/t_25.jpg",
+   "outcome_thumb": "thumbs/o_25.jpg"
+  },
+  {
+   "id": 551,
+   "parent": 22,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_551.jpg",
+   "video": "videos/e_551.mp4",
+   "outcome_image": "outcomes/o_551.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_551.jpg",
+   "thumb": "thumbs/t_551.jpg",
+   "outcome_thumb": "thumbs/o_551.jpg"
+  },
+  {
+   "id": 561,
+   "parent": 22,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_561.jpg",
+   "video": "videos/e_561.mp4",
+   "outcome_image": "outcomes/o_561.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_561.jpg",
+   "thumb": "thumbs/t_561.jpg",
+   "outcome_thumb": "thumbs/o_561.jpg"
+  },
+  {
+   "id": 567,
+   "parent": 22,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 3,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_567.jpg",
+   "video": "videos/e_567.mp4",
+   "outcome_image": "outcomes/o_567.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_567.jpg",
+   "thumb": "thumbs/t_567.jpg",
+   "outcome_thumb": "thumbs/o_567.jpg"
+  },
+  {
+   "id": 685,
+   "parent": 24,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_685.jpg",
+   "video": "videos/e_685.mp4",
+   "outcome_image": "outcomes/o_685.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_685.jpg",
+   "thumb": "thumbs/t_685.jpg",
+   "outcome_thumb": "thumbs/o_685.jpg"
+  },
+  {
+   "id": 686,
+   "parent": 24,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_686.jpg",
+   "video": "videos/e_686.mp4",
+   "outcome_image": "outcomes/o_686.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_686.jpg",
+   "thumb": "thumbs/t_686.jpg",
+   "outcome_thumb": "thumbs/o_686.jpg"
+  },
+  {
+   "id": 262,
+   "parent": 26,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_262.jpg",
+   "video": "videos/e_262.mp4",
+   "outcome_image": "outcomes/o_262.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_262.jpg",
+   "thumb": "thumbs/t_262.jpg",
+   "outcome_thumb": "thumbs/o_262.jpg"
+  },
+  {
+   "id": 278,
+   "parent": 26,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_278.jpg",
+   "video": "videos/e_278.mp4",
+   "outcome_image": "outcomes/o_278.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_278.jpg",
+   "thumb": "thumbs/t_278.jpg",
+   "outcome_thumb": "thumbs/o_278.jpg"
+  },
+  {
+   "id": 282,
+   "parent": 26,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_282.jpg",
+   "video": "videos/e_282.mp4",
+   "outcome_image": "outcomes/o_282.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 129
+   },
+   "depth": 2,
+   "card": "cards/c_282.jpg",
+   "thumb": "thumbs/t_282.jpg",
+   "outcome_thumb": "thumbs/o_282.jpg"
+  },
+  {
+   "id": 359,
+   "parent": 27,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_359.jpg",
+   "video": "videos/e_359.mp4",
+   "outcome_image": "outcomes/o_359.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_359.jpg",
+   "thumb": "thumbs/t_359.jpg",
+   "outcome_thumb": "thumbs/o_359.jpg"
+  },
+  {
+   "id": 371,
+   "parent": 27,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_371.jpg",
+   "video": "videos/e_371.mp4",
+   "outcome_image": "outcomes/o_371.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_371.jpg",
+   "thumb": "thumbs/t_371.jpg",
+   "outcome_thumb": "thumbs/o_371.jpg"
+  },
+  {
+   "id": 428,
+   "parent": 28,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_428.jpg",
+   "video": "videos/e_428.mp4",
+   "outcome_image": "outcomes/o_428.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_428.jpg",
+   "thumb": "thumbs/t_428.jpg",
+   "outcome_thumb": "thumbs/o_428.jpg"
+  },
+  {
+   "id": 433,
+   "parent": 28,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_433.jpg",
+   "video": "videos/e_433.mp4",
+   "outcome_image": "outcomes/o_433.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_433.jpg",
+   "thumb": "thumbs/t_433.jpg",
+   "outcome_thumb": "thumbs/o_433.jpg"
+  },
+  {
+   "id": 439,
+   "parent": 28,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_439.jpg",
+   "video": "videos/e_439.mp4",
+   "outcome_image": "outcomes/o_439.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_439.jpg",
+   "thumb": "thumbs/t_439.jpg",
+   "outcome_thumb": "thumbs/o_439.jpg"
+  },
+  {
+   "id": 144,
+   "parent": 29,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_144.jpg",
+   "video": "videos/e_144.mp4",
+   "outcome_image": "outcomes/o_144.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_144.jpg",
+   "thumb": "thumbs/t_144.jpg",
+   "outcome_thumb": "thumbs/o_144.jpg"
+  },
+  {
+   "id": 156,
+   "parent": 29,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_156.jpg",
+   "video": "videos/e_156.mp4",
+   "outcome_image": "outcomes/o_156.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_156.jpg",
+   "thumb": "thumbs/t_156.jpg",
+   "outcome_thumb": "thumbs/o_156.jpg"
+  },
+  {
+   "id": 225,
+   "parent": 30,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_225.jpg",
+   "video": "videos/e_225.mp4",
+   "outcome_image": "outcomes/o_225.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 2,
+   "card": "cards/c_225.jpg",
+   "thumb": "thumbs/t_225.jpg",
+   "outcome_thumb": "thumbs/o_225.jpg"
+  },
+  {
+   "id": 75,
+   "parent": 31,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_75.jpg",
+   "video": "videos/e_75.mp4",
+   "outcome_image": "outcomes/o_75.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 112
+   },
+   "depth": 2,
+   "card": "cards/c_75.jpg",
+   "thumb": "thumbs/t_75.jpg",
+   "outcome_thumb": "thumbs/o_75.jpg"
+  },
+  {
+   "id": 92,
+   "parent": 31,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_92.jpg",
+   "video": "videos/e_92.mp4",
+   "outcome_image": "outcomes/o_92.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 112
+   },
+   "depth": 2,
+   "card": "cards/c_92.jpg",
+   "thumb": "thumbs/t_92.jpg",
+   "outcome_thumb": "thumbs/o_92.jpg"
+  },
+  {
+   "id": 43,
+   "parent": 32,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_43.jpg",
+   "video": "videos/e_43.mp4",
+   "outcome_image": "outcomes/o_43.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 112
+   },
+   "depth": 2,
+   "card": "cards/c_43.jpg",
+   "thumb": "thumbs/t_43.jpg",
+   "outcome_thumb": "thumbs/o_43.jpg"
+  },
+  {
+   "id": 60,
+   "parent": 32,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_60.jpg",
+   "video": "videos/e_60.mp4",
+   "outcome_image": "outcomes/o_60.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 112
+   },
+   "depth": 2,
+   "card": "cards/c_60.jpg",
+   "thumb": "thumbs/t_60.jpg",
+   "outcome_thumb": "thumbs/o_60.jpg"
+  },
+  {
+   "id": 1762,
+   "parent": 571,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1762.jpg",
+   "video": "videos/e_1762.mp4",
+   "outcome_image": "outcomes/o_1762.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1762.jpg",
+   "thumb": "thumbs/t_1762.jpg",
+   "outcome_thumb": "thumbs/o_1762.jpg"
+  },
+  {
+   "id": 1770,
+   "parent": 571,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1770.jpg",
+   "video": "videos/e_1770.mp4",
+   "outcome_image": "outcomes/o_1770.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1770.jpg",
+   "thumb": "thumbs/t_1770.jpg",
+   "outcome_thumb": "thumbs/o_1770.jpg"
+  },
+  {
+   "id": 1774,
+   "parent": 571,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1774.jpg",
+   "video": "videos/e_1774.mp4",
+   "outcome_image": "outcomes/o_1774.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1774.jpg",
+   "thumb": "thumbs/t_1774.jpg",
+   "outcome_thumb": "thumbs/o_1774.jpg"
+  },
+  {
+   "id": 1121,
+   "parent": 572,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1121.jpg",
+   "video": "videos/e_1121.mp4",
+   "outcome_image": "outcomes/o_1121.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1121.jpg",
+   "thumb": "thumbs/t_1121.jpg",
+   "outcome_thumb": "thumbs/o_1121.jpg"
+  },
+  {
+   "id": 1129,
+   "parent": 572,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1129.jpg",
+   "video": "videos/e_1129.mp4",
+   "outcome_image": "outcomes/o_1129.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1129.jpg",
+   "thumb": "thumbs/t_1129.jpg",
+   "outcome_thumb": "thumbs/o_1129.jpg"
+  },
+  {
+   "id": 1135,
+   "parent": 572,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1135.jpg",
+   "video": "videos/e_1135.mp4",
+   "outcome_image": "outcomes/o_1135.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1135.jpg",
+   "thumb": "thumbs/t_1135.jpg",
+   "outcome_thumb": "thumbs/o_1135.jpg"
+  },
+  {
+   "id": 1538,
+   "parent": 573,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1538.jpg",
+   "video": "videos/e_1538.mp4",
+   "outcome_image": "outcomes/o_1538.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 119
+   },
+   "depth": 3,
+   "card": "cards/c_1538.jpg",
+   "thumb": "thumbs/t_1538.jpg",
+   "outcome_thumb": "thumbs/o_1538.jpg"
+  },
+  {
+   "id": 1546,
+   "parent": 573,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1546.jpg",
+   "video": "videos/e_1546.mp4",
+   "outcome_image": "outcomes/o_1546.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1546.jpg",
+   "thumb": "thumbs/t_1546.jpg",
+   "outcome_thumb": "thumbs/o_1546.jpg"
+  },
+  {
+   "id": 1554,
+   "parent": 573,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1554.jpg",
+   "video": "videos/e_1554.mp4",
+   "outcome_image": "outcomes/o_1554.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1554.jpg",
+   "thumb": "thumbs/t_1554.jpg",
+   "outcome_thumb": "thumbs/o_1554.jpg"
+  },
+  {
+   "id": 833,
+   "parent": 574,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_833.jpg",
+   "video": "videos/e_833.mp4",
+   "outcome_image": "outcomes/o_833.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_833.jpg",
+   "thumb": "thumbs/t_833.jpg",
+   "outcome_thumb": "thumbs/o_833.jpg"
+  },
+  {
+   "id": 841,
+   "parent": 574,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_841.jpg",
+   "video": "videos/e_841.mp4",
+   "outcome_image": "outcomes/o_841.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_841.jpg",
+   "thumb": "thumbs/t_841.jpg",
+   "outcome_thumb": "thumbs/o_841.jpg"
+  },
+  {
+   "id": 849,
+   "parent": 574,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_849.jpg",
+   "video": "videos/e_849.mp4",
+   "outcome_image": "outcomes/o_849.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_849.jpg",
+   "thumb": "thumbs/t_849.jpg",
+   "outcome_thumb": "thumbs/o_849.jpg"
+  },
+  {
+   "id": 1282,
+   "parent": 575,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1282.jpg",
+   "video": "videos/e_1282.mp4",
+   "outcome_image": "outcomes/o_1282.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1282.jpg",
+   "thumb": "thumbs/t_1282.jpg",
+   "outcome_thumb": "thumbs/o_1282.jpg"
+  },
+  {
+   "id": 1306,
+   "parent": 575,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1306.jpg",
+   "video": "videos/e_1306.mp4",
+   "outcome_image": "outcomes/o_1306.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1306.jpg",
+   "thumb": "thumbs/t_1306.jpg",
+   "outcome_thumb": "thumbs/o_1306.jpg"
+  },
+  {
+   "id": 577,
+   "parent": 576,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_577.jpg",
+   "video": "videos/e_577.mp4",
+   "outcome_image": "outcomes/o_577.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_577.jpg",
+   "thumb": "thumbs/t_577.jpg",
+   "outcome_thumb": "thumbs/o_577.jpg"
+  },
+  {
+   "id": 585,
+   "parent": 576,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_585.jpg",
+   "video": "videos/e_585.mp4",
+   "outcome_image": "outcomes/o_585.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_585.jpg",
+   "thumb": "thumbs/t_585.jpg",
+   "outcome_thumb": "thumbs/o_585.jpg"
+  },
+  {
+   "id": 586,
+   "parent": 576,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_586.jpg",
+   "video": "videos/e_586.mp4",
+   "outcome_image": "outcomes/o_586.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_586.jpg",
+   "thumb": "thumbs/t_586.jpg",
+   "outcome_thumb": "thumbs/o_586.jpg"
+  },
+  {
+   "id": 1057,
+   "parent": 696,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1057.jpg",
+   "video": "videos/e_1057.mp4",
+   "outcome_image": "outcomes/o_1057.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1057.jpg",
+   "thumb": "thumbs/t_1057.jpg",
+   "outcome_thumb": "thumbs/o_1057.jpg"
+  },
+  {
+   "id": 1065,
+   "parent": 696,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1065.jpg",
+   "video": "videos/e_1065.mp4",
+   "outcome_image": "outcomes/o_1065.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1065.jpg",
+   "thumb": "thumbs/t_1065.jpg",
+   "outcome_thumb": "thumbs/o_1065.jpg"
+  },
+  {
+   "id": 1066,
+   "parent": 696,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1066.jpg",
+   "video": "videos/e_1066.mp4",
+   "outcome_image": "outcomes/o_1066.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1066.jpg",
+   "thumb": "thumbs/t_1066.jpg",
+   "outcome_thumb": "thumbs/o_1066.jpg"
+  },
+  {
+   "id": 1698,
+   "parent": 697,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1698.jpg",
+   "video": "videos/e_1698.mp4",
+   "outcome_image": "outcomes/o_1698.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1698.jpg",
+   "thumb": "thumbs/t_1698.jpg",
+   "outcome_thumb": "thumbs/o_1698.jpg"
+  },
+  {
+   "id": 1714,
+   "parent": 697,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1714.jpg",
+   "video": "videos/e_1714.mp4",
+   "outcome_image": "outcomes/o_1714.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1714.jpg",
+   "thumb": "thumbs/t_1714.jpg",
+   "outcome_thumb": "thumbs/o_1714.jpg"
+  },
+  {
+   "id": 1490,
+   "parent": 700,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1490.jpg",
+   "video": "videos/e_1490.mp4",
+   "outcome_image": "outcomes/o_1490.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1490.jpg",
+   "thumb": "thumbs/t_1490.jpg",
+   "outcome_thumb": "thumbs/o_1490.jpg"
+  },
+  {
+   "id": 1498,
+   "parent": 700,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1498.jpg",
+   "video": "videos/e_1498.mp4",
+   "outcome_image": "outcomes/o_1498.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 122
+   },
+   "depth": 3,
+   "card": "cards/c_1498.jpg",
+   "thumb": "thumbs/t_1498.jpg",
+   "outcome_thumb": "thumbs/o_1498.jpg"
+  },
+  {
+   "id": 1499,
+   "parent": 700,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1499.jpg",
+   "video": "videos/e_1499.mp4",
+   "outcome_image": "outcomes/o_1499.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_1499.jpg",
+   "thumb": "thumbs/t_1499.jpg",
+   "outcome_thumb": "thumbs/o_1499.jpg"
+  },
+  {
+   "id": 1890,
+   "parent": 701,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1890.jpg",
+   "video": "videos/e_1890.mp4",
+   "outcome_image": "outcomes/o_1890.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_1890.jpg",
+   "thumb": "thumbs/t_1890.jpg",
+   "outcome_thumb": "thumbs/o_1890.jpg"
+  },
+  {
+   "id": 1903,
+   "parent": 701,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1903.jpg",
+   "video": "videos/e_1903.mp4",
+   "outcome_image": "outcomes/o_1903.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 128
+   },
+   "depth": 3,
+   "card": "cards/c_1903.jpg",
+   "thumb": "thumbs/t_1903.jpg",
+   "outcome_thumb": "thumbs/o_1903.jpg"
+  },
+  {
+   "id": 713,
+   "parent": 702,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_713.jpg",
+   "video": "videos/e_713.mp4",
+   "outcome_image": "outcomes/o_713.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_713.jpg",
+   "thumb": "thumbs/t_713.jpg",
+   "outcome_thumb": "thumbs/o_713.jpg"
+  },
+  {
+   "id": 724,
+   "parent": 702,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_724.jpg",
+   "video": "videos/e_724.mp4",
+   "outcome_image": "outcomes/o_724.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_724.jpg",
+   "thumb": "thumbs/t_724.jpg",
+   "outcome_thumb": "thumbs/o_724.jpg"
+  },
+  {
+   "id": 731,
+   "parent": 702,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_731.jpg",
+   "video": "videos/e_731.mp4",
+   "outcome_image": "outcomes/o_731.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_731.jpg",
+   "thumb": "thumbs/t_731.jpg",
+   "outcome_thumb": "thumbs/o_731.jpg"
+  },
+  {
+   "id": 769,
+   "parent": 703,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_769.jpg",
+   "video": "videos/e_769.mp4",
+   "outcome_image": "outcomes/o_769.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_769.jpg",
+   "thumb": "thumbs/t_769.jpg",
+   "outcome_thumb": "thumbs/o_769.jpg"
+  },
+  {
+   "id": 785,
+   "parent": 703,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_785.jpg",
+   "video": "videos/e_785.mp4",
+   "outcome_image": "outcomes/o_785.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 130
+   },
+   "depth": 3,
+   "card": "cards/c_785.jpg",
+   "thumb": "thumbs/t_785.jpg",
+   "outcome_thumb": "thumbs/o_785.jpg"
+  },
+  {
+   "id": 786,
+   "parent": 703,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_786.jpg",
+   "video": "videos/e_786.mp4",
+   "outcome_image": "outcomes/o_786.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 115
+   },
+   "depth": 3,
+   "card": "cards/c_786.jpg",
+   "thumb": "thumbs/t_786.jpg",
+   "outcome_thumb": "thumbs/o_786.jpg"
+  },
+  {
+   "id": 289,
+   "parent": 285,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_289.jpg",
+   "video": "videos/e_289.mp4",
+   "outcome_image": "outcomes/o_289.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 115
+   },
+   "depth": 3,
+   "card": "cards/c_289.jpg",
+   "thumb": "thumbs/t_289.jpg",
+   "outcome_thumb": "thumbs/o_289.jpg"
+  },
+  {
+   "id": 313,
+   "parent": 285,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_313.jpg",
+   "video": "videos/e_313.mp4",
+   "outcome_image": "outcomes/o_313.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 115
+   },
+   "depth": 3,
+   "card": "cards/c_313.jpg",
+   "thumb": "thumbs/t_313.jpg",
+   "outcome_thumb": "thumbs/o_313.jpg"
+  },
+  {
+   "id": 1025,
+   "parent": 286,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1025.jpg",
+   "video": "videos/e_1025.mp4",
+   "outcome_image": "outcomes/o_1025.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 115
+   },
+   "depth": 3,
+   "card": "cards/c_1025.jpg",
+   "thumb": "thumbs/t_1025.jpg",
+   "outcome_thumb": "thumbs/o_1025.jpg"
+  },
+  {
+   "id": 1049,
+   "parent": 286,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1049.jpg",
+   "video": "videos/e_1049.mp4",
+   "outcome_image": "outcomes/o_1049.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 115
+   },
+   "depth": 3,
+   "card": "cards/c_1049.jpg",
+   "thumb": "thumbs/t_1049.jpg",
+   "outcome_thumb": "thumbs/o_1049.jpg"
+  },
+  {
+   "id": 1386,
+   "parent": 369,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1386.jpg",
+   "video": "videos/e_1386.mp4",
+   "outcome_image": "outcomes/o_1386.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1386.jpg",
+   "thumb": "thumbs/t_1386.jpg",
+   "outcome_thumb": "thumbs/o_1386.jpg"
+  },
+  {
+   "id": 1634,
+   "parent": 370,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1634.jpg",
+   "video": "videos/e_1634.mp4",
+   "outcome_image": "outcomes/o_1634.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 119
+   },
+   "depth": 3,
+   "card": "cards/c_1634.jpg",
+   "thumb": "thumbs/t_1634.jpg",
+   "outcome_thumb": "thumbs/o_1634.jpg"
+  },
+  {
+   "id": 1642,
+   "parent": 370,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1642.jpg",
+   "video": "videos/e_1642.mp4",
+   "outcome_image": "outcomes/o_1642.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1642.jpg",
+   "thumb": "thumbs/t_1642.jpg",
+   "outcome_thumb": "thumbs/o_1642.jpg"
+  },
+  {
+   "id": 1645,
+   "parent": 370,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1645.jpg",
+   "video": "videos/e_1645.mp4",
+   "outcome_image": "outcomes/o_1645.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 3,
+   "card": "cards/c_1645.jpg",
+   "thumb": "thumbs/t_1645.jpg",
+   "outcome_thumb": "thumbs/o_1645.jpg"
+  },
+  {
+   "id": 457,
+   "parent": 438,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_457.jpg",
+   "video": "videos/e_457.mp4",
+   "outcome_image": "outcomes/o_457.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_457.jpg",
+   "thumb": "thumbs/t_457.jpg",
+   "outcome_thumb": "thumbs/o_457.jpg"
+  },
+  {
+   "id": 465,
+   "parent": 438,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_465.jpg",
+   "video": "videos/e_465.mp4",
+   "outcome_image": "outcomes/o_465.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_465.jpg",
+   "thumb": "thumbs/t_465.jpg",
+   "outcome_thumb": "thumbs/o_465.jpg"
+  },
+  {
+   "id": 468,
+   "parent": 438,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_468.jpg",
+   "video": "videos/e_468.mp4",
+   "outcome_image": "outcomes/o_468.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_468.jpg",
+   "thumb": "thumbs/t_468.jpg",
+   "outcome_thumb": "thumbs/o_468.jpg"
+  },
+  {
+   "id": 1506,
+   "parent": 440,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1506.jpg",
+   "video": "videos/e_1506.mp4",
+   "outcome_image": "outcomes/o_1506.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 113
+   },
+   "depth": 3,
+   "card": "cards/c_1506.jpg",
+   "thumb": "thumbs/t_1506.jpg",
+   "outcome_thumb": "thumbs/o_1506.jpg"
+  },
+  {
+   "id": 1530,
+   "parent": 440,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1530.jpg",
+   "video": "videos/e_1530.mp4",
+   "outcome_image": "outcomes/o_1530.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_1530.jpg",
+   "thumb": "thumbs/t_1530.jpg",
+   "outcome_thumb": "thumbs/o_1530.jpg"
+  },
+  {
+   "id": 2130,
+   "parent": 441,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2130.jpg",
+   "video": "videos/e_2130.mp4",
+   "outcome_image": "outcomes/o_2130.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_2130.jpg",
+   "thumb": "thumbs/t_2130.jpg",
+   "outcome_thumb": "thumbs/o_2130.jpg"
+  },
+  {
+   "id": 2137,
+   "parent": 441,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2137.jpg",
+   "video": "videos/e_2137.mp4",
+   "outcome_image": "outcomes/o_2137.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 125
+   },
+   "depth": 3,
+   "card": "cards/c_2137.jpg",
+   "thumb": "thumbs/t_2137.jpg",
+   "outcome_thumb": "thumbs/o_2137.jpg"
+  },
+  {
+   "id": 1835,
+   "parent": 442,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1835.jpg",
+   "video": "videos/e_1835.mp4",
+   "outcome_image": "outcomes/o_1835.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 3,
+   "card": "cards/c_1835.jpg",
+   "thumb": "thumbs/t_1835.jpg",
+   "outcome_thumb": "thumbs/o_1835.jpg"
+  },
+  {
+   "id": 1841,
+   "parent": 442,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1841.jpg",
+   "video": "videos/e_1841.mp4",
+   "outcome_image": "outcomes/o_1841.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1841.jpg",
+   "thumb": "thumbs/t_1841.jpg",
+   "outcome_thumb": "thumbs/o_1841.jpg"
+  },
+  {
+   "id": 1185,
+   "parent": 443,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1185.jpg",
+   "video": "videos/e_1185.mp4",
+   "outcome_image": "outcomes/o_1185.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1185.jpg",
+   "thumb": "thumbs/t_1185.jpg",
+   "outcome_thumb": "thumbs/o_1185.jpg"
+  },
+  {
+   "id": 1209,
+   "parent": 443,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1209.jpg",
+   "video": "videos/e_1209.mp4",
+   "outcome_image": "outcomes/o_1209.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1209.jpg",
+   "thumb": "thumbs/t_1209.jpg",
+   "outcome_thumb": "thumbs/o_1209.jpg"
+  },
+  {
+   "id": 1212,
+   "parent": 443,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1212.jpg",
+   "video": "videos/e_1212.mp4",
+   "outcome_image": "outcomes/o_1212.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1212.jpg",
+   "thumb": "thumbs/t_1212.jpg",
+   "outcome_thumb": "thumbs/o_1212.jpg"
+  },
+  {
+   "id": 2002,
+   "parent": 155,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2002.jpg",
+   "video": "videos/e_2002.mp4",
+   "outcome_image": "outcomes/o_2002.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_2002.jpg",
+   "thumb": "thumbs/t_2002.jpg",
+   "outcome_thumb": "thumbs/o_2002.jpg"
+  },
+  {
+   "id": 2003,
+   "parent": 155,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2003.jpg",
+   "video": "videos/e_2003.mp4",
+   "outcome_image": "outcomes/o_2003.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_2003.jpg",
+   "thumb": "thumbs/t_2003.jpg",
+   "outcome_thumb": "thumbs/o_2003.jpg"
+  },
+  {
+   "id": 1586,
+   "parent": 157,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1586.jpg",
+   "video": "videos/e_1586.mp4",
+   "outcome_image": "outcomes/o_1586.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1586.jpg",
+   "thumb": "thumbs/t_1586.jpg",
+   "outcome_thumb": "thumbs/o_1586.jpg"
+  },
+  {
+   "id": 1273,
+   "parent": 158,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1273.jpg",
+   "video": "videos/e_1273.mp4",
+   "outcome_image": "outcomes/o_1273.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 114
+   },
+   "depth": 3,
+   "card": "cards/c_1273.jpg",
+   "thumb": "thumbs/t_1273.jpg",
+   "outcome_thumb": "thumbs/o_1273.jpg"
+  },
+  {
+   "id": 1280,
+   "parent": 158,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1280.jpg",
+   "video": "videos/e_1280.mp4",
+   "outcome_image": "outcomes/o_1280.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_1280.jpg",
+   "thumb": "thumbs/t_1280.jpg",
+   "outcome_thumb": "thumbs/o_1280.jpg"
+  },
+  {
+   "id": 178,
+   "parent": 159,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_178.jpg",
+   "video": "videos/e_178.mp4",
+   "outcome_image": "outcomes/o_178.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_178.jpg",
+   "thumb": "thumbs/t_178.jpg",
+   "outcome_thumb": "thumbs/o_178.jpg"
+  },
+  {
+   "id": 179,
+   "parent": 159,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_179.jpg",
+   "video": "videos/e_179.mp4",
+   "outcome_image": "outcomes/o_179.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_179.jpg",
+   "thumb": "thumbs/t_179.jpg",
+   "outcome_thumb": "thumbs/o_179.jpg"
+  },
+  {
+   "id": 961,
+   "parent": 94,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_961.jpg",
+   "video": "videos/e_961.mp4",
+   "outcome_image": "outcomes/o_961.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_961.jpg",
+   "thumb": "thumbs/t_961.jpg",
+   "outcome_thumb": "thumbs/o_961.jpg"
+  },
+  {
+   "id": 978,
+   "parent": 94,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_978.jpg",
+   "video": "videos/e_978.mp4",
+   "outcome_image": "outcomes/o_978.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_978.jpg",
+   "thumb": "thumbs/t_978.jpg",
+   "outcome_thumb": "thumbs/o_978.jpg"
+  },
+  {
+   "id": 979,
+   "parent": 94,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 1,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_979.jpg",
+   "video": "videos/e_979.mp4",
+   "outcome_image": "outcomes/o_979.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_979.jpg",
+   "thumb": "thumbs/t_979.jpg",
+   "outcome_thumb": "thumbs/o_979.jpg"
+  },
+  {
+   "id": 113,
+   "parent": 96,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_113.jpg",
+   "video": "videos/e_113.mp4",
+   "outcome_image": "outcomes/o_113.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 136
+   },
+   "depth": 3,
+   "card": "cards/c_113.jpg",
+   "thumb": "thumbs/t_113.jpg",
+   "outcome_thumb": "thumbs/o_113.jpg"
+  },
+  {
+   "id": 1794,
+   "parent": 1785,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1794.jpg",
+   "video": "videos/e_1794.mp4",
+   "outcome_image": "outcomes/o_1794.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1794.jpg",
+   "thumb": "thumbs/t_1794.jpg",
+   "outcome_thumb": "thumbs/o_1794.jpg"
+  },
+  {
+   "id": 1810,
+   "parent": 1785,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1810.jpg",
+   "video": "videos/e_1810.mp4",
+   "outcome_image": "outcomes/o_1810.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1810.jpg",
+   "thumb": "thumbs/t_1810.jpg",
+   "outcome_thumb": "thumbs/o_1810.jpg"
+  },
+  {
+   "id": 1811,
+   "parent": 1785,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1811.jpg",
+   "video": "videos/e_1811.mp4",
+   "outcome_image": "outcomes/o_1811.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1811.jpg",
+   "thumb": "thumbs/t_1811.jpg",
+   "outcome_thumb": "thumbs/o_1811.jpg"
+  },
+  {
+   "id": 1153,
+   "parent": 1139,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1153.jpg",
+   "video": "videos/e_1153.mp4",
+   "outcome_image": "outcomes/o_1153.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 119
+   },
+   "depth": 4,
+   "card": "cards/c_1153.jpg",
+   "thumb": "thumbs/t_1153.jpg",
+   "outcome_thumb": "thumbs/o_1153.jpg"
+  },
+  {
+   "id": 1169,
+   "parent": 1139,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1169.jpg",
+   "video": "videos/e_1169.mp4",
+   "outcome_image": "outcomes/o_1169.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1169.jpg",
+   "thumb": "thumbs/t_1169.jpg",
+   "outcome_thumb": "thumbs/o_1169.jpg"
+  },
+  {
+   "id": 1171,
+   "parent": 1139,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1171.jpg",
+   "video": "videos/e_1171.mp4",
+   "outcome_image": "outcomes/o_1171.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1171.jpg",
+   "thumb": "thumbs/t_1171.jpg",
+   "outcome_thumb": "thumbs/o_1171.jpg"
+  },
+  {
+   "id": 881,
+   "parent": 842,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_881.jpg",
+   "video": "videos/e_881.mp4",
+   "outcome_image": "outcomes/o_881.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_881.jpg",
+   "thumb": "thumbs/t_881.jpg",
+   "outcome_thumb": "thumbs/o_881.jpg"
+  },
+  {
+   "id": 1954,
+   "parent": 851,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1954.jpg",
+   "video": "videos/e_1954.mp4",
+   "outcome_image": "outcomes/o_1954.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 120
+   },
+   "depth": 4,
+   "card": "cards/c_1954.jpg",
+   "thumb": "thumbs/t_1954.jpg",
+   "outcome_thumb": "thumbs/o_1954.jpg"
+  },
+  {
+   "id": 1971,
+   "parent": 851,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1971.jpg",
+   "video": "videos/e_1971.mp4",
+   "outcome_image": "outcomes/o_1971.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_1971.jpg",
+   "thumb": "thumbs/t_1971.jpg",
+   "outcome_thumb": "thumbs/o_1971.jpg"
+  },
+  {
+   "id": 2245,
+   "parent": 1308,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2245.jpg",
+   "video": "videos/e_2245.mp4",
+   "outcome_image": "outcomes/o_2245.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_2245.jpg",
+   "thumb": "thumbs/t_2245.jpg",
+   "outcome_thumb": "thumbs/o_2245.jpg"
+  },
+  {
+   "id": 1314,
+   "parent": 1309,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1314.jpg",
+   "video": "videos/e_1314.mp4",
+   "outcome_image": "outcomes/o_1314.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_1314.jpg",
+   "thumb": "thumbs/t_1314.jpg",
+   "outcome_thumb": "thumbs/o_1314.jpg"
+  },
+  {
+   "id": 641,
+   "parent": 595,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_641.jpg",
+   "video": "videos/e_641.mp4",
+   "outcome_image": "outcomes/o_641.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_641.jpg",
+   "thumb": "thumbs/t_641.jpg",
+   "outcome_thumb": "thumbs/o_641.jpg"
+  },
+  {
+   "id": 657,
+   "parent": 595,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_657.jpg",
+   "video": "videos/e_657.mp4",
+   "outcome_image": "outcomes/o_657.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_657.jpg",
+   "thumb": "thumbs/t_657.jpg",
+   "outcome_thumb": "thumbs/o_657.jpg"
+  },
+  {
+   "id": 659,
+   "parent": 595,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_659.jpg",
+   "video": "videos/e_659.mp4",
+   "outcome_image": "outcomes/o_659.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_659.jpg",
+   "thumb": "thumbs/t_659.jpg",
+   "outcome_thumb": "thumbs/o_659.jpg"
+  },
+  {
+   "id": 609,
+   "parent": 603,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_609.jpg",
+   "video": "videos/e_609.mp4",
+   "outcome_image": "outcomes/o_609.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 123
+   },
+   "depth": 4,
+   "card": "cards/c_609.jpg",
+   "thumb": "thumbs/t_609.jpg",
+   "outcome_thumb": "thumbs/o_609.jpg"
+  },
+  {
+   "id": 1089,
+   "parent": 1071,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1089.jpg",
+   "video": "videos/e_1089.mp4",
+   "outcome_image": "outcomes/o_1089.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_1089.jpg",
+   "thumb": "thumbs/t_1089.jpg",
+   "outcome_thumb": "thumbs/o_1089.jpg"
+  },
+  {
+   "id": 2406,
+   "parent": 1075,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2406.jpg",
+   "video": "videos/e_2406.mp4",
+   "outcome_image": "outcomes/o_2406.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2406.jpg",
+   "thumb": "thumbs/t_2406.jpg",
+   "outcome_thumb": "thumbs/o_2406.jpg"
+  },
+  {
+   "id": 2422,
+   "parent": 1075,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2422.jpg",
+   "video": "videos/e_2422.mp4",
+   "outcome_image": "outcomes/o_2422.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2422.jpg",
+   "thumb": "thumbs/t_2422.jpg",
+   "outcome_thumb": "thumbs/o_2422.jpg"
+  },
+  {
+   "id": 2431,
+   "parent": 1075,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2431.jpg",
+   "video": "videos/e_2431.mp4",
+   "outcome_image": "outcomes/o_2431.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2431.jpg",
+   "thumb": "thumbs/t_2431.jpg",
+   "outcome_thumb": "thumbs/o_2431.jpg"
+  },
+  {
+   "id": 1730,
+   "parent": 1716,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1730.jpg",
+   "video": "videos/e_1730.mp4",
+   "outcome_image": "outcomes/o_1730.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_1730.jpg",
+   "thumb": "thumbs/t_1730.jpg",
+   "outcome_thumb": "thumbs/o_1730.jpg"
+  },
+  {
+   "id": 2179,
+   "parent": 1729,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2179.jpg",
+   "video": "videos/e_2179.mp4",
+   "outcome_image": "outcomes/o_2179.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2179.jpg",
+   "thumb": "thumbs/t_2179.jpg",
+   "outcome_thumb": "thumbs/o_2179.jpg"
+  },
+  {
+   "id": 2195,
+   "parent": 1729,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2195.jpg",
+   "video": "videos/e_2195.mp4",
+   "outcome_image": "outcomes/o_2195.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2195.jpg",
+   "thumb": "thumbs/t_2195.jpg",
+   "outcome_thumb": "thumbs/o_2195.jpg"
+  },
+  {
+   "id": 2198,
+   "parent": 1729,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2198.jpg",
+   "video": "videos/e_2198.mp4",
+   "outcome_image": "outcomes/o_2198.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 131
+   },
+   "depth": 4,
+   "card": "cards/c_2198.jpg",
+   "thumb": "thumbs/t_2198.jpg",
+   "outcome_thumb": "thumbs/o_2198.jpg"
+  },
+  {
+   "id": 1938,
+   "parent": 1897,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1938.jpg",
+   "video": "videos/e_1938.mp4",
+   "outcome_image": "outcomes/o_1938.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 106
+   },
+   "depth": 4,
+   "card": "cards/c_1938.jpg",
+   "thumb": "thumbs/t_1938.jpg",
+   "outcome_thumb": "thumbs/o_1938.jpg"
+  },
+  {
+   "id": 801,
+   "parent": 799,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_801.jpg",
+   "video": "videos/e_801.mp4",
+   "outcome_image": "outcomes/o_801.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 106
+   },
+   "depth": 4,
+   "card": "cards/c_801.jpg",
+   "thumb": "thumbs/t_801.jpg",
+   "outcome_thumb": "thumbs/o_801.jpg"
+  },
+  {
+   "id": 321,
+   "parent": 316,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_321.jpg",
+   "video": "videos/e_321.mp4",
+   "outcome_image": "outcomes/o_321.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 106
+   },
+   "depth": 4,
+   "card": "cards/c_321.jpg",
+   "thumb": "thumbs/t_321.jpg",
+   "outcome_thumb": "thumbs/o_321.jpg"
+  },
+  {
+   "id": 337,
+   "parent": 316,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_337.jpg",
+   "video": "videos/e_337.mp4",
+   "outcome_image": "outcomes/o_337.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 4,
+   "card": "cards/c_337.jpg",
+   "thumb": "thumbs/t_337.jpg",
+   "outcome_thumb": "thumbs/o_337.jpg"
+  },
+  {
+   "id": 513,
+   "parent": 473,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_513.jpg",
+   "video": "videos/e_513.mp4",
+   "outcome_image": "outcomes/o_513.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 4,
+   "card": "cards/c_513.jpg",
+   "thumb": "thumbs/t_513.jpg",
+   "outcome_thumb": "thumbs/o_513.jpg"
+  },
+  {
+   "id": 529,
+   "parent": 473,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_529.jpg",
+   "video": "videos/e_529.mp4",
+   "outcome_image": "outcomes/o_529.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 4,
+   "card": "cards/c_529.jpg",
+   "thumb": "thumbs/t_529.jpg",
+   "outcome_thumb": "thumbs/o_529.jpg"
+  },
+  {
+   "id": 530,
+   "parent": 473,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_530.jpg",
+   "video": "videos/e_530.mp4",
+   "outcome_image": "outcomes/o_530.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 4,
+   "card": "cards/c_530.jpg",
+   "thumb": "thumbs/t_530.jpg",
+   "outcome_thumb": "thumbs/o_530.jpg"
+  },
+  {
+   "id": 481,
+   "parent": 476,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_481.jpg",
+   "video": "videos/e_481.mp4",
+   "outcome_image": "outcomes/o_481.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 126
+   },
+   "depth": 4,
+   "card": "cards/c_481.jpg",
+   "thumb": "thumbs/t_481.jpg",
+   "outcome_thumb": "thumbs/o_481.jpg"
+  },
+  {
+   "id": 1602,
+   "parent": 1588,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1602.jpg",
+   "video": "videos/e_1602.mp4",
+   "outcome_image": "outcomes/o_1602.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_1602.jpg",
+   "thumb": "thumbs/t_1602.jpg",
+   "outcome_thumb": "thumbs/o_1602.jpg"
+  },
+  {
+   "id": 2293,
+   "parent": 1274,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2293.jpg",
+   "video": "videos/e_2293.mp4",
+   "outcome_image": "outcomes/o_2293.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_2293.jpg",
+   "thumb": "thumbs/t_2293.jpg",
+   "outcome_thumb": "thumbs/o_2293.jpg"
+  },
+  {
+   "id": 2295,
+   "parent": 1274,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_2295.jpg",
+   "video": "videos/e_2295.mp4",
+   "outcome_image": "outcomes/o_2295.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_2295.jpg",
+   "thumb": "thumbs/t_2295.jpg",
+   "outcome_thumb": "thumbs/o_2295.jpg"
+  },
+  {
+   "id": 193,
+   "parent": 177,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_193.jpg",
+   "video": "videos/e_193.mp4",
+   "outcome_image": "outcomes/o_193.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_193.jpg",
+   "thumb": "thumbs/t_193.jpg",
+   "outcome_thumb": "thumbs/o_193.jpg"
+  },
+  {
+   "id": 209,
+   "parent": 177,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 2,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_209.jpg",
+   "video": "videos/e_209.mp4",
+   "outcome_image": "outcomes/o_209.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_209.jpg",
+   "thumb": "thumbs/t_209.jpg",
+   "outcome_thumb": "thumbs/o_209.jpg"
+  },
+  {
+   "id": 1346,
+   "parent": 977,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1346.jpg",
+   "video": "videos/e_1346.mp4",
+   "outcome_image": "outcomes/o_1346.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_1346.jpg",
+   "thumb": "thumbs/t_1346.jpg",
+   "outcome_thumb": "thumbs/o_1346.jpg"
+  },
+  {
+   "id": 1362,
+   "parent": 977,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1362.jpg",
+   "video": "videos/e_1362.mp4",
+   "outcome_image": "outcomes/o_1362.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_1362.jpg",
+   "thumb": "thumbs/t_1362.jpg",
+   "outcome_thumb": "thumbs/o_1362.jpg"
+  },
+  {
+   "id": 1367,
+   "parent": 977,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1367.jpg",
+   "video": "videos/e_1367.mp4",
+   "outcome_image": "outcomes/o_1367.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 137
+   },
+   "depth": 4,
+   "card": "cards/c_1367.jpg",
+   "thumb": "thumbs/t_1367.jpg",
+   "outcome_thumb": "thumbs/o_1367.jpg"
+  },
+  {
+   "id": 993,
+   "parent": 983,
+   "children": [],
+   "status": "failed",
+   "failure_type": "grasp_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_993.jpg",
+   "video": "videos/e_993.mp4",
+   "outcome_image": "outcomes/o_993.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 143
+   },
+   "depth": 4,
+   "card": "cards/c_993.jpg",
+   "thumb": "thumbs/t_993.jpg",
+   "outcome_thumb": "thumbs/o_993.jpg"
+  },
+  {
+   "id": 1009,
+   "parent": 983,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_execution",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1009.jpg",
+   "video": "videos/e_1009.mp4",
+   "outcome_image": "outcomes/o_1009.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 143
+   },
+   "depth": 4,
+   "card": "cards/c_1009.jpg",
+   "thumb": "thumbs/t_1009.jpg",
+   "outcome_thumb": "thumbs/o_1009.jpg"
+  },
+  {
+   "id": 1010,
+   "parent": 983,
+   "children": [],
+   "status": "failed",
+   "failure_type": "place_motion_plan",
+   "object": 0,
+   "progress": null,
+   "visits": 0,
+   "Q": 0.0,
+   "image": "nodes/n_1010.jpg",
+   "video": "videos/e_1010.mp4",
+   "outcome_image": "outcomes/o_1010.jpg",
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": null,
+    "err_cm": null,
+    "replicates": 4,
+    "steps": 143
+   },
+   "depth": 4,
+   "card": "cards/c_1010.jpg",
+   "thumb": "thumbs/t_1010.jpg",
+   "outcome_thumb": "thumbs/o_1010.jpg"
+  }
+ ],
+ "summary": {
+  "tree_nodes": 2439,
+  "valid_edges": 90,
+  "failed_edges": 129,
+  "goal_nodes": 6,
+  "goal_nodes_full_tree": 14,
+  "dropped_unmatched": {
+   "valid": 25,
+   "failed": 18
+  }
+ },
+ "render": {
+  "shader": "rt",
+  "size": 512
+ }
+}

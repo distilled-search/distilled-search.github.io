@@ -1,0 +1,443 @@
+{
+ "task": "stacking",
+ "env": 11,
+ "num_objects": 4,
+ "fps": 30,
+ "stride": 2,
+ "object_names": [
+  "6072a4739c12979baa69dfdc5532bb13_0",
+  "26780889da30bdb9b88d31093d1f51f7_1",
+  "72692864abdfa144d24546afc5de2582_2",
+  "3387e118aec3bcc17234af9602711ad_3"
+ ],
+ "root": 0,
+ "nodes": [
+  {
+   "id": 0,
+   "parent": null,
+   "children": [
+    19,
+    25,
+    45,
+    66,
+    84,
+    92,
+    132
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": null,
+   "progress": 1,
+   "visits": 500,
+   "Q": 0.0,
+   "image": "nodes/n_0.jpg",
+   "video": null,
+   "outcome_image": null,
+   "tried": {
+    "total": 51,
+    "failed": {
+     "no_contact_or_offset": 17
+    },
+    "not_shown": 27
+   },
+   "replay": null,
+   "depth": 0,
+   "thumb": "thumbs/t_0.jpg"
+  },
+  {
+   "id": 19,
+   "parent": 0,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 15,
+   "Q": 0.75,
+   "image": "nodes/n_19.jpg",
+   "video": "videos/e_19.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 9,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 8
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.35,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_19.jpg",
+   "thumb": "thumbs/t_19.jpg"
+  },
+  {
+   "id": 25,
+   "parent": 0,
+   "children": [
+    474
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 18,
+   "Q": 0.875,
+   "image": "nodes/n_25.jpg",
+   "video": "videos/e_25.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 9,
+    "failed": {
+     "no_contact_or_offset": 2
+    },
+    "not_shown": 6
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.88,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_25.jpg",
+   "thumb": "thumbs/t_25.jpg"
+  },
+  {
+   "id": 45,
+   "parent": 0,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 16,
+   "Q": 0.7812,
+   "image": "nodes/n_45.jpg",
+   "video": "videos/e_45.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 9,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 8
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.37,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_45.jpg",
+   "thumb": "thumbs/t_45.jpg"
+  },
+  {
+   "id": 66,
+   "parent": 0,
+   "children": [
+    405
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 16,
+   "Q": 0.7969,
+   "image": "nodes/n_66.jpg",
+   "video": "videos/e_66.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 9,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 7
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.63,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_66.jpg",
+   "thumb": "thumbs/t_66.jpg"
+  },
+  {
+   "id": 84,
+   "parent": 0,
+   "children": [
+    88
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 17,
+   "Q": 0.8235,
+   "image": "nodes/n_84.jpg",
+   "video": "videos/e_84.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 11,
+    "failed": {
+     "no_contact_or_offset": 4
+    },
+    "not_shown": 6
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.32,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_84.jpg",
+   "thumb": "thumbs/t_84.jpg"
+  },
+  {
+   "id": 92,
+   "parent": 0,
+   "children": [
+    93
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 17,
+   "Q": 0.8382,
+   "image": "nodes/n_92.jpg",
+   "video": "videos/e_92.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 11,
+    "failed": {
+     "no_contact_or_offset": 5
+    },
+    "not_shown": 5
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.45,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_92.jpg",
+   "thumb": "thumbs/t_92.jpg"
+  },
+  {
+   "id": 132,
+   "parent": 0,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 15,
+   "Q": 0.7667,
+   "image": "nodes/n_132.jpg",
+   "video": "videos/e_132.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 9,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 8
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.38,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 1,
+   "card": "cards/c_132.jpg",
+   "thumb": "thumbs/t_132.jpg"
+  },
+  {
+   "id": 474,
+   "parent": 25,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 3,
+   "Q": 0.75,
+   "image": "nodes/n_474.jpg",
+   "video": "videos/e_474.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 3,
+    "failed": {
+     "no_contact_or_offset": 3
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.66,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_474.jpg",
+   "thumb": "thumbs/t_474.jpg"
+  },
+  {
+   "id": 405,
+   "parent": 66,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 1,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.875,
+   "image": "nodes/n_405.jpg",
+   "video": "videos/e_405.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 2,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.63,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_405.jpg",
+   "thumb": "thumbs/t_405.jpg"
+  },
+  {
+   "id": 88,
+   "parent": 84,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 3,
+   "Q": 1.0,
+   "image": "nodes/n_88.jpg",
+   "video": "videos/e_88.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 3,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 2
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 1.91,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_88.jpg",
+   "thumb": "thumbs/t_88.jpg"
+  },
+  {
+   "id": 93,
+   "parent": 92,
+   "children": [
+    94
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 3,
+   "Q": 1.0,
+   "image": "nodes/n_93.jpg",
+   "video": "videos/e_93.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 3,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.87,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_93.jpg",
+   "thumb": "thumbs/t_93.jpg"
+  },
+  {
+   "id": 94,
+   "parent": 93,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 0,
+   "progress": 4,
+   "visits": 2,
+   "Q": 1.0,
+   "image": "nodes/n_94.jpg",
+   "video": "videos/e_94.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 2.51,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 3,
+   "card": "cards/c_94.jpg",
+   "thumb": "thumbs/t_94.jpg"
+  }
+ ],
+ "summary": {
+  "tree_nodes": 808,
+  "valid_edges": 12,
+  "failed_edges": 0,
+  "goal_nodes": 1,
+  "goal_nodes_full_tree": 72,
+  "dropped_unmatched": {
+   "valid": 0,
+   "failed": 0
+  }
+ },
+ "render": {
+  "shader": "rt",
+  "size": 512
+ }
+}

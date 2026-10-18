@@ -1,0 +1,601 @@
+{
+ "task": "stacking",
+ "env": 48,
+ "num_objects": 4,
+ "fps": 30,
+ "stride": 2,
+ "object_names": [
+  "fc6af8e72fe442a99446794b5ac5eabd_0",
+  "a8cfed0a1b9451c9d213467246722099_1",
+  "9b818d54d601b026b161f36d4e309050_2",
+  "41391118c374e765ff3ef8f363b2cc43_3"
+ ],
+ "root": 0,
+ "nodes": [
+  {
+   "id": 0,
+   "parent": null,
+   "children": [
+    8,
+    29,
+    31,
+    133,
+    136,
+    140,
+    188
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": null,
+   "progress": 1,
+   "visits": 500,
+   "Q": 0.0,
+   "image": "nodes/n_0.jpg",
+   "video": null,
+   "outcome_image": null,
+   "tried": {
+    "total": 75,
+    "failed": {
+     "no_contact_or_offset": 39
+    },
+    "not_shown": 29
+   },
+   "replay": null,
+   "depth": 0,
+   "thumb": "thumbs/t_0.jpg"
+  },
+  {
+   "id": 8,
+   "parent": 0,
+   "children": [
+    481,
+    673
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 16,
+   "Q": 0.8281,
+   "image": "nodes/n_8.jpg",
+   "video": "videos/e_8.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 14,
+    "failed": {
+     "no_contact_or_offset": 6
+    },
+    "not_shown": 6
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.04,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_8.jpg",
+   "thumb": "thumbs/t_8.jpg"
+  },
+  {
+   "id": 29,
+   "parent": 0,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 14,
+   "Q": 0.7321,
+   "image": "nodes/n_29.jpg",
+   "video": "videos/e_29.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 13,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 12
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.07,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_29.jpg",
+   "thumb": "thumbs/t_29.jpg"
+  },
+  {
+   "id": 31,
+   "parent": 0,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 1,
+   "progress": 2,
+   "visits": 14,
+   "Q": 0.75,
+   "image": "nodes/n_31.jpg",
+   "video": "videos/e_31.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 13,
+    "failed": {
+     "no_contact_or_offset": 6
+    },
+    "not_shown": 7
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.08,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_31.jpg",
+   "thumb": "thumbs/t_31.jpg"
+  },
+  {
+   "id": 133,
+   "parent": 0,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 2,
+   "visits": 12,
+   "Q": 0.6667,
+   "image": "nodes/n_133.jpg",
+   "video": "videos/e_133.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 8,
+    "failed": {
+     "no_contact_or_offset": 7
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "3/4",
+    "err_cm": 0.51,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_133.jpg",
+   "thumb": "thumbs/t_133.jpg"
+  },
+  {
+   "id": 136,
+   "parent": 0,
+   "children": [
+    829
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 2,
+   "progress": 2,
+   "visits": 16,
+   "Q": 0.8281,
+   "image": "nodes/n_136.jpg",
+   "video": "videos/e_136.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 14,
+    "failed": {
+     "no_contact_or_offset": 5
+    },
+    "not_shown": 8
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.47,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_136.jpg",
+   "thumb": "thumbs/t_136.jpg"
+  },
+  {
+   "id": 140,
+   "parent": 0,
+   "children": [
+    459,
+    623,
+    671,
+    793,
+    831
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 15,
+   "Q": 0.8,
+   "image": "nodes/n_140.jpg",
+   "video": "videos/e_140.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 14,
+    "failed": {
+     "no_contact_or_offset": 4
+    },
+    "not_shown": 5
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.2,
+    "replicates": 4,
+    "steps": 215
+   },
+   "depth": 1,
+   "card": "cards/c_140.jpg",
+   "thumb": "thumbs/t_140.jpg"
+  },
+  {
+   "id": 188,
+   "parent": 0,
+   "children": [
+    378
+   ],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 0,
+   "progress": 2,
+   "visits": 18,
+   "Q": 0.9167,
+   "image": "nodes/n_188.jpg",
+   "video": "videos/e_188.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 14,
+    "failed": {
+     "no_contact_or_offset": 7
+    },
+    "not_shown": 6
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "10/16",
+    "err_cm": 1.7,
+    "replicates": 16,
+    "steps": 214
+   },
+   "depth": 1,
+   "card": "cards/c_188.jpg",
+   "thumb": "thumbs/t_188.jpg"
+  },
+  {
+   "id": 481,
+   "parent": 8,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.75,
+   "image": "nodes/n_481.jpg",
+   "video": "videos/e_481.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 2,
+    "failed": {
+     "no_contact_or_offset": 2
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.6,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_481.jpg",
+   "thumb": "thumbs/t_481.jpg"
+  },
+  {
+   "id": 673,
+   "parent": 8,
+   "children": [],
+   "status": "solved_hidden",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 1.0,
+   "image": "nodes/n_673.jpg",
+   "video": "videos/e_673.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 2,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.55,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_673.jpg",
+   "thumb": "thumbs/t_673.jpg"
+  },
+  {
+   "id": 829,
+   "parent": 136,
+   "children": [
+    860
+   ],
+   "status": "on_path",
+   "failure_type": null,
+   "object": 0,
+   "progress": 3,
+   "visits": 2,
+   "Q": 1.0,
+   "image": "nodes/n_829.jpg",
+   "video": "videos/e_829.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 2,
+    "failed": {},
+    "not_shown": 1
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.69,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_829.jpg",
+   "thumb": "thumbs/t_829.jpg"
+  },
+  {
+   "id": 459,
+   "parent": 140,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.75,
+   "image": "nodes/n_459.jpg",
+   "video": "videos/e_459.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.8,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_459.jpg",
+   "thumb": "thumbs/t_459.jpg"
+  },
+  {
+   "id": 623,
+   "parent": 140,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.75,
+   "image": "nodes/n_623.jpg",
+   "video": "videos/e_623.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.47,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_623.jpg",
+   "thumb": "thumbs/t_623.jpg"
+  },
+  {
+   "id": 671,
+   "parent": 140,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.75,
+   "image": "nodes/n_671.jpg",
+   "video": "videos/e_671.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.42,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_671.jpg",
+   "thumb": "thumbs/t_671.jpg"
+  },
+  {
+   "id": 793,
+   "parent": 140,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.75,
+   "image": "nodes/n_793.jpg",
+   "video": "videos/e_793.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.66,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_793.jpg",
+   "thumb": "thumbs/t_793.jpg"
+  },
+  {
+   "id": 831,
+   "parent": 140,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 3,
+   "progress": 3,
+   "visits": 1,
+   "Q": 0.75,
+   "image": "nodes/n_831.jpg",
+   "video": "videos/e_831.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 1,
+    "failed": {
+     "no_contact_or_offset": 1
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.23,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_831.jpg",
+   "thumb": "thumbs/t_831.jpg"
+  },
+  {
+   "id": 378,
+   "parent": 188,
+   "children": [],
+   "status": "dead_end",
+   "failure_type": null,
+   "object": 2,
+   "progress": 3,
+   "visits": 2,
+   "Q": 0.75,
+   "image": "nodes/n_378.jpg",
+   "video": "videos/e_378.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 2,
+    "failed": {
+     "no_contact_or_offset": 2
+    },
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 1.71,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 2,
+   "card": "cards/c_378.jpg",
+   "thumb": "thumbs/t_378.jpg"
+  },
+  {
+   "id": 860,
+   "parent": 829,
+   "children": [],
+   "status": "goal",
+   "failure_type": null,
+   "object": 3,
+   "progress": 4,
+   "visits": 1,
+   "Q": 1.0,
+   "image": "nodes/n_860.jpg",
+   "video": "videos/e_860.mp4",
+   "outcome_image": null,
+   "tried": {
+    "total": 0,
+    "failed": {},
+    "not_shown": 0
+   },
+   "replay": {
+    "matched": true,
+    "replicates_ok": "4/4",
+    "err_cm": 0.64,
+    "replicates": 4,
+    "steps": 211
+   },
+   "depth": 3,
+   "card": "cards/c_860.jpg",
+   "thumb": "thumbs/t_860.jpg"
+  }
+ ],
+ "summary": {
+  "tree_nodes": 863,
+  "valid_edges": 17,
+  "failed_edges": 0,
+  "goal_nodes": 1,
+  "goal_nodes_full_tree": 55,
+  "dropped_unmatched": {
+   "valid": 0,
+   "failed": 0
+  }
+ },
+ "render": {
+  "shader": "rt",
+  "size": 512
+ }
+}
