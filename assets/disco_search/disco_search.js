@@ -87,7 +87,7 @@
     const snaps = [snap({ path: [0], executed: [], added: [], end: 0, why: "start", log: [] })];
 
     for (let it = 1; it <= MAX_ITERS && !exhausted.has(0); it++) {
-      const log = [], added = [], executed = [];
+      const log = [], added = [], executed = [], widened = [];
       const sample = (v, kind, extra) => {
         const hidden = v.kids.filter((c) => !revealed.has(c.id));
         const got = draw(hidden, B);
@@ -112,7 +112,10 @@
             const why = !shown.length ? `Expand step ${v.depth}:`
               : shown.length < limit ? `Widen step ${v.depth}: |children| ${shown.length} < k·N^α = ${fmt(limit)}, so`
               : `Step ${v.depth}: no feasible sampled action left, so`;
-            open = open.concat(sample(v, shown.length && shown.length < limit ? "widen" : "expand", why).filter(feasible));
+            const isWiden = shown.length && shown.length < limit;
+            const got = sample(v, isWiden ? "widen" : "expand", why);
+            if (isWiden) widened.push({ node: v.id, kids: got.map((c) => c.id) });
+            open = open.concat(got.filter(feasible));
           } else if (hidden) {
             log.push({ kind: "check", text: `Step ${v.depth}: |children| ${shown.length} ≥ k·N^α = ${fmt(limit)}, no widening.`, node: v.id });
           }
@@ -158,7 +161,7 @@
       if (isNew) plans.push(cur.id);
       log.push({ kind: isNew ? "plan" : "backup", text: (isNew ? `Plan ${plans.length} found! ` : "") +
         `Back up R = ${fmt(ret)} along ${plural(path.length, "state")}.`, node: cur.id });
-      snaps.push(snap({ path: path.map((v) => v.id), executed, added, end: cur.id, why, log, newPlan: isNew }));
+      snaps.push(snap({ path: path.map((v) => v.id), executed, added, widened, end: cur.id, why, log, newPlan: isNew }));
     }
     return snaps;
   }
@@ -350,6 +353,7 @@
       this.i = clamp(i, 0, this.t.snaps.length - 1);
       this.inspect = null;
       this.render(animate);
+      for (const w of this.t.snaps[this.i].widened || []) this.widenFx(w.node, w.kids);
     }
 
     // --------------------------------------------------------------- drawing
@@ -402,6 +406,27 @@
         this.edges.set(n.id, path);
       }
       return e;
+    }
+
+    // Progressive widening: gold ripples from the state, a "widened +n" tag, and its new edges glow for a moment.
+    widenFx(id, kids) {
+      const e = this.els.get(id);
+      if (!e) return;
+      for (let k = 0; k < 3; k++) {
+        const ring = svg("circle", { class: "ds-pw-ripple", r: R + 4, style: `animation-delay:${k * 0.22}s` });
+        e.g.insertBefore(ring, e.g.children[1]);
+        setTimeout(() => ring.remove(), 1400 + k * 220);
+      }
+      const tag = svg("text", { class: "ds-pw-tag", y: -R - 14 });
+      tag.textContent = `widened +${kids.length}`;
+      e.g.append(tag);
+      setTimeout(() => tag.remove(), 1900);
+      for (const kid of kids) {
+        const edge = this.edges.get(kid);
+        if (!edge) continue;
+        edge.classList.add("ds-pw-edge");
+        setTimeout(() => edge.classList.remove("ds-pw-edge"), 1700);
+      }
     }
 
     fadeOut(ids) {

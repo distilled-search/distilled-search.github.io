@@ -262,12 +262,25 @@
       this.placePill();
     }
 
-    flash(id) {
+    // Progressive widening: gold ripples from the state, a "widened +n" tag, and its new edges glow for a moment.
+    flash(id, kids = []) {
       const e = this.els.get(id);
       if (!e) return;
-      e.g.classList.remove("dg-widened");
-      void e.g.getBBox();  // restart the animation
-      e.g.classList.add("dg-widened");
+      for (let k = 0; k < 3; k++) {
+        const ring = svg("circle", { class: "dg-pw-ripple", r: R + 4, style: `animation-delay:${k * 0.25}s` });
+        e.g.insertBefore(ring, e.g.children[1]);
+        setTimeout(() => ring.remove(), 1500 + k * 250);
+      }
+      const tag = svg("text", { class: "dg-pw-tag", y: -R - 14 });
+      tag.textContent = `widened +${kids.length}`;
+      e.g.append(tag);
+      setTimeout(() => tag.remove(), 2000);
+      for (const k of kids) {
+        const edge = this.edges.get(k.id);
+        if (!edge) continue;
+        edge.classList.add("dg-pw-edge");
+        setTimeout(() => edge.classList.remove("dg-pw-edge"), 1800);
+      }
     }
 
     toast(text, kind) {
@@ -1174,12 +1187,12 @@
           if (s.type === "widen") {
             D.log(`Widen step ${d}: |children| ${s.had} < k·N^α = ${num(K)}·${Math.max(s.N, 1)}^${num(A)} = ${fmt(s.limit)}, ` +
               `so sample ${acts}.${tail}`, "widen");
-            D.flash(s.node.id);
           } else if (s.type === "forced") D.log(`Step ${d}: no feasible sampled action left, so sample ${acts}.${tail}`);
           else if (s.type === "rollout") D.log(`Rollout at step ${d}: sample ${acts}.${tail}`);
           else D.log(`Expand step ${d}: sample ${acts}.${tail}`);
           p.sampled += s.kids.length;
           D.reveal(s.kids);
+          if (s.type === "widen") D.flash(s.node.id, s.kids);
           this.updateStats();
           await sleep(pace() + (s.type === "widen" ? 700 : 250));
         } else if (s.kind === "select") {

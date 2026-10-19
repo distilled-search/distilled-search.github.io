@@ -309,8 +309,21 @@
 .dg-node.dg-fading, .dg-edge.dg-fading { opacity: 0 !important; pointer-events: none; }
 .dg-node[data-outcome="goal"] .dg-ring { stroke: var(--dg-goal); stroke-width: 5; }
 .dg-node[data-outcome="dead"] .dg-ring { stroke: var(--dg-failed); stroke-width: 4; stroke-dasharray: none; }
-.dg-node.dg-widened .dg-sel { opacity: 1; stroke: var(--dg-goal); animation: dg-widen 0.9s ease-out 2; }
-@keyframes dg-widen { 0% { stroke-width: 3; opacity: 1; } 100% { stroke-width: 16; opacity: 0; } }
+/* progressive widening: ripples, a floating tag, glowing new edges */
+.dg-pw-ripple {
+  fill: none; stroke: var(--dg-goal); stroke-width: 4; opacity: 0; pointer-events: none;
+  transform-box: fill-box; transform-origin: center; animation: dg-pw-ripple 1.25s ease-out forwards;
+}
+@keyframes dg-pw-ripple { 0% { opacity: 0.95; transform: scale(1); } 100% { opacity: 0; transform: scale(2.3); } }
+.dg-pw-tag {
+  font-size: 14px; font-weight: 800; fill: var(--dg-goal); text-anchor: middle; pointer-events: none;
+  paint-order: stroke; stroke: var(--dg-bg); stroke-width: 4px; animation: dg-pw-tag 2s ease-out forwards;
+}
+@keyframes dg-pw-tag {
+  0% { opacity: 0; transform: translateY(8px); } 15% { opacity: 1; transform: translateY(0); }
+  75% { opacity: 1; } 100% { opacity: 0; transform: translateY(-12px); }
+}
+.dg-edge.dg-pw-edge { stroke: var(--dg-goal); stroke-width: 4; stroke-dasharray: none; opacity: 1; filter: drop-shadow(0 0 4px rgba(250, 204, 21, 0.85)); }
 .dg-node .dg-sel { fill: none; stroke: var(--dg-side); stroke-width: 3.5; opacity: 0; }
 .dg-node.dg-selected .dg-sel { opacity: 1; }
 .dg-node.dg-playing .dg-sel { opacity: 1; stroke-dasharray: 10 6; animation: dg-spin 1.2s linear infinite; }
@@ -410,7 +423,7 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .dg-banner.dg-show, .dg-toast-msg, .dg-score-num.dg-bump { animation-duration: 0.01s; }
-  .dg-ball-tiles, .dg-spark, .dg-active .dg-badge, .dg-edge.dg-playing, .dg-node.dg-playing .dg-sel { animation: none; }
+  .dg-pw-ripple, .dg-pw-tag, .dg-ball-tiles, .dg-spark, .dg-active .dg-badge, .dg-edge.dg-playing, .dg-node.dg-playing .dg-sel { animation: none; }
   .dg-launch-btn { opacity: 1; transform: none; }
   .dg-launch-btn.dg-pop, .dg-result-card, .dg-start.dg-btn { animation: none; }
 }

@@ -81,6 +81,21 @@
 .ds-node[data-outcome="goal"] .ds-ring { stroke: var(--ds-goal); stroke-width: 5; }
 .ds-node[data-outcome="dead"] .ds-ring { stroke: var(--ds-failed); stroke-width: 4; stroke-dasharray: none; }
 .ds-node:hover .ds-ring { stroke-width: 5; }
+/* progressive widening: ripples, a floating tag, glowing new edges */
+.ds-pw-ripple {
+  fill: none; stroke: var(--ds-goal); stroke-width: 4; opacity: 0; pointer-events: none;
+  transform-box: fill-box; transform-origin: center; animation: ds-pw-ripple 1.2s ease-out forwards;
+}
+@keyframes ds-pw-ripple { 0% { opacity: 0.95; transform: scale(1); } 100% { opacity: 0; transform: scale(2.3); } }
+.ds-pw-tag {
+  font-size: 14px; font-weight: 800; fill: var(--ds-goal); text-anchor: middle; pointer-events: none;
+  paint-order: stroke; stroke: var(--ds-surface); stroke-width: 4px; animation: ds-pw-tag 1.9s ease-out forwards;
+}
+@keyframes ds-pw-tag {
+  0% { opacity: 0; transform: translateY(8px); } 15% { opacity: 1; transform: translateY(0); }
+  75% { opacity: 1; } 100% { opacity: 0; transform: translateY(-12px); }
+}
+.ds-edge.ds-pw-edge { stroke: var(--ds-goal); stroke-width: 4; stroke-dasharray: none; opacity: 1; filter: drop-shadow(0 0 4px rgba(250, 204, 21, 0.85)); }
 .ds-label { font-size: 12px; fill: var(--ds-muted); text-anchor: middle; pointer-events: none; }
 .ds-node[data-outcome="failed"] .ds-label { fill: var(--ds-failed); font-weight: 700; }
 .ds-stat { font-size: 11px; fill: var(--ds-accent); text-anchor: middle; pointer-events: none; font-variant-numeric: tabular-nums; }
@@ -189,5 +204,5 @@
   .ds-timeline { gap: 10px; padding: 8px 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ds-node.ds-new { animation: none; }
+  .ds-node.ds-new, .ds-pw-ripple, .ds-pw-tag { animation: none; }
 }
