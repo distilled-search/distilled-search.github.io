@@ -378,8 +378,14 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
     .people-card { padding: 1rem 0.9rem 0.9rem; border-radius: 14px; }
     .hero-authors { gap: 0.3rem 1.1rem; }
     .hero-affiliations { gap: 0.5rem 1.8rem; }
-    .hero-logo-cmu { height: 36px; }
-    .hero-logo-stanford { height: 68px; margin: -14px 0; }
+    /* keep both logos on one line: each takes a share of the row and scales down with it */
+    .hero-affiliations { flex-wrap: nowrap; gap: 0 0.8rem; }
+    .hero-affiliation { min-width: 0; align-items: center; }
+    .hero-affiliation:first-child { flex: 0 1 60%; }
+    .hero-affiliation:last-child { flex: 0 1 38%; }
+    .hero-affiliation img { min-width: 0; max-width: 100%; }
+    .hero-logo-cmu { width: 100%; height: auto; }
+    .hero-logo-stanford { width: 100%; height: auto; margin: -12px 0; }
     .corl-banner { padding: 0.55rem 1.1rem; border-radius: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {

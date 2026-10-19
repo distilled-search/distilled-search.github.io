@@ -97,6 +97,25 @@
       spark(37, 10, 4, 0), spark(5, 33, 3, 0.7), spark(38, 33, 2.5, 1.3));
   }
 
+  // Keep only branches that can actually be played. States the search never expanded are dropped, and so are branches
+  // the search solved later but whose motions were not saved (nothing playable below them). Every remaining state where
+  // play stops is a real dead end, with a reason in dead_ends.json.
+  function prune(t) {
+    const done = new Map();
+    const kids = (n) => {
+      if (done.has(n.id)) return done.get(n.id);
+      const out = [];
+      for (const c of n.children.map((id) => t.byId.get(id))) {
+        if (c.status === "unexplored") continue;
+        if (c.status === "solved_hidden" && !kids(c).some((k) => k.status !== "failed")) continue;
+        out.push(c);
+      }
+      done.set(n.id, out);
+      return out;
+    };
+    for (const n of t.nodes) n.kids = kids(n);
+  }
+
   // Search state of one player. phase/cur/path track the iteration in progress. gone holds failed actions that were
   // shown once and then removed from the graph; they still count as revealed.
   function newPlayer() {
@@ -808,8 +827,7 @@
         const t = await (await fetch(`${this.base}data/${id}/tree.json`)).json();
         t.byId = new Map(t.nodes.map((n) => [n.id, n]));
         t.dir = `${this.base}data/${id}/`;
-        // States the search never expanded are left out: they cannot be sampled.
-        for (const n of t.nodes) n.kids = n.children.map((c) => t.byId.get(c)).filter((k) => k.status !== "unexplored");
+        prune(t);
         this.cache[id] = t;
       }
       if (gen !== this.gen) return;
@@ -840,8 +858,6 @@
     title() { return this.games.find((g) => g.id === this.gameId).title; }
     deadReason(n) {
       if (this.reasons[`${this.gameId}/${n.id}`]) return this.reasons[`${this.gameId}/${n.id}`];
-      if (n.status === "solved_hidden") return "DISCO's search did finish the task from here, but those motions were not " +
-        "saved, so this branch cannot be played further.";
       const fails = n.kids.map((k) => failText(k.failure_type)[0].toLowerCase());
       return fails.length ? `Every action the policy proposed here failed (${[...new Set(fails)].join(", ")}).`
         : "The search tried every action from here and none led to a solution.";

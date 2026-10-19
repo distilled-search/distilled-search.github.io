@@ -56,6 +56,25 @@
     };
   }
 
+  // Keep only branches that can actually be played. States the search never expanded are dropped, and so are branches
+  // the search solved later but whose motions were not saved (nothing playable below them). Every remaining state where
+  // play stops is a real dead end, with a reason in dead_ends.json.
+  function prune(t) {
+    const done = new Map();
+    const kids = (n) => {
+      if (done.has(n.id)) return done.get(n.id);
+      const out = [];
+      for (const c of n.children.map((id) => t.byId.get(id))) {
+        if (c.status === "unexplored") continue;
+        if (c.status === "solved_hidden" && !kids(c).some((k) => k.status !== "failed")) continue;
+        out.push(c);
+      }
+      done.set(n.id, out);
+      return out;
+    };
+    for (const n of t.nodes) n.kids = kids(n);
+  }
+
   // =============================================================== the search, run once per environment
   // Returns one snapshot per iteration (index 0 is the start): what has been sampled and executed, visit counts and
   // values, the path of that iteration, and a log of its decisions.
@@ -281,8 +300,7 @@
         const t = await (await fetch(`${this.base}data/${id}/tree.json`)).json();
         t.byId = new Map(t.nodes.map((n) => [n.id, n]));
         t.dir = `${this.base}data/${id}/`;
-        // States the search never expanded are left out, as in the game.
-        for (const n of t.nodes) n.kids = n.children.map((c) => t.byId.get(c)).filter((c) => c.status !== "unexplored");
+        prune(t);
         t.runs = {};
         this.cache[id] = t;
       }
@@ -634,7 +652,6 @@
     deadReason(n) {
       const r = this.reasons[`${this.id}/${n.id}`];
       if (r) return r;
-      if (n.status === "solved_hidden") return "The search did finish the task from here, but those motions were not saved.";
       return "No saved action from this state leads anywhere new.";
     }
 
