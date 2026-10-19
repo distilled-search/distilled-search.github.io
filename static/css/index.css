@@ -622,3 +622,20 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 
 /* ------------------------------------------------------------------ acknowledgments */
 .ack-text { max-width: 60rem; margin: 0 auto; font-size: 0.95rem; line-height: 1.7; color: #475569; text-align: left; }
+
+/* ------------------------------------------------------------------ smaller type on tablets and phones */
+@media (max-width: 900px) {
+    p[style*="font-size: 125%"], .content .abstract-question { font-size: 1.1rem !important; }
+    .title.is-3 { font-size: 1.75rem; }
+}
+@media (max-width: 600px) {
+    p[style*="font-size: 125%"] { font-size: 1rem !important; line-height: 1.6; }
+    .content .abstract-question { font-size: 1.02rem !important; padding: 0.8rem 1rem; }
+    .title.is-3 { font-size: 1.5rem; }
+    .title.is-4 { font-size: 1.25rem; }
+    .task-lead, .mm-lead, .real-lead { font-size: 1rem; }
+    .exec-note, .cheat-note, .corl-catch, .real-why, .real-blurb { font-size: 0.95rem; }
+    .res-title { font-size: 1.15rem; }
+    .res-points li { font-size: 0.95rem; }
+    .ack-text { font-size: 0.9rem; }
+}
