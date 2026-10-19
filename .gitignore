@@ -1,0 +1,9 @@
+# Local working files, not part of the site
+web/
+tree_game_web.zip
+DISCO_Finalv3.pdf
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
