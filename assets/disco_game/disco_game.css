@@ -103,6 +103,18 @@
 .dg-in-setup .dg-setup { display: block; }
 .dg-in-setup .dg-play { display: none; }
 .dg-setup-inner { max-width: 900px; margin: 0 auto; }
+.dg-about {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; margin: 0 0 18px; padding: 12px 16px;
+  border-radius: 12px; background: color-mix(in srgb, var(--dg-disco) 9%, var(--dg-bg));
+  border: 1px solid color-mix(in srgb, var(--dg-disco) 35%, var(--dg-border));
+}
+.dg-about p { margin: 0; flex: 1 1 320px; font-size: 16px; }
+.dg-about b { color: var(--dg-disco); }
+.dg-learn.dg-btn {
+  flex: 0 1 auto; max-width: 100%; padding: 8px 16px; border-radius: 999px; font-weight: 700; color: #fff;
+  background: var(--dg-disco); border-color: var(--dg-disco);
+}
+.dg-learn.dg-btn:hover { background: var(--dg-disco); filter: brightness(1.1); }
 .dg-h2 { font-size: clamp(24px, 3.4vw, 32px); font-weight: 800; letter-spacing: -0.015em; line-height: 1.2; margin: 0 0 12px; color: var(--dg-text); }
 .dg-challenge {
   background: linear-gradient(90deg, #f472b6, #a855f7 45%, #f59e0b);
@@ -419,7 +431,51 @@
   .dg-giveup { font-size: 11.5px; padding: 6px 10px; white-space: normal; text-align: center; }
   .dg-side { grid-template-rows: auto 52vh auto; }
   .dg-bottom { grid-template-columns: 120px minmax(0, 1fr); }
-  .dg-result { position: fixed; }
+  .dg-result { position: fixed; z-index: 9; }  /* above the sticky scoreboard */
+}
+/* phones: a compact top bar, and a scoreboard of two score cards around the round, with the give-up button below */
+@media (max-width: 600px) {
+  .dg-overlay { font-size: 14px; }
+  .dg-top { gap: 6px 8px; padding: 6px 52px 6px 10px; }
+  .dg-title { font-size: 16px; }
+  .dg-top-controls { gap: 6px; flex: 1 1 100%; }
+  .dg-top-controls .dg-btn { padding: 4px 10px; font-size: 13px; }
+  .dg-toggle { font-size: 13px; }
+  .dg-close { top: 6px; right: 8px; width: 32px; height: 32px; }
+  .dg-setup { padding: 16px 12px 28px; }
+  .dg-about { padding: 10px 12px; }
+  .dg-about p { flex-basis: 100%; font-size: 15px; }
+  .dg-cards { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }
+  .dg-b-row input[type="range"] { width: auto; flex: 1 1 160px; }
+  .dg-b-help { flex-basis: 100%; }
+  .dg-param-presets .dg-btn { white-space: normal; text-align: left; }
+  .dg-start.dg-btn { width: 100%; }
+  .dg-scoreboard { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 6px; }
+  .dg-round-col { display: contents; }
+  .dg-giveup { grid-column: 1 / -1; grid-row: 2; justify-self: center; font-size: 12.5px; padding: 6px 14px; white-space: nowrap; }
+  .dg-score { padding: 4px 8px; border-radius: 10px; }
+  .dg-score-name { font-size: 12px; letter-spacing: 0.08em; }
+  .dg-score-main { gap: 4px; }
+  .dg-score-num { font-size: 30px; }
+  .dg-score-unit { font-size: 11px; letter-spacing: 0.04em; }
+  .dg-score-sub { font-size: 11px; }
+  .dg-round { padding: 4px 10px; border-radius: 10px; }
+  .dg-round-label { font-size: 10px; letter-spacing: 0.15em; }
+  .dg-round-num { font-size: 26px; }
+  .dg-round-turn { font-size: 11px; white-space: nowrap; }
+  .dg-play { padding: 0 6px 8px; gap: 8px; }
+  .dg-side { grid-template-rows: auto 46vh auto; }
+  .dg-graph-help { font-size: 11px; right: 44px; }
+  .dg-bottom { grid-template-columns: 96px minmax(0, 1fr); gap: 8px; padding: 8px; }
+  .dg-info { font-size: 13px; }
+  .dg-status-row { flex-wrap: wrap; gap: 4px 8px; }
+  .dg-banner { width: max-content; max-width: 90%; padding: 10px 18px; font-size: 22px; white-space: normal; text-align: center; }
+  .dg-toast-msg { font-size: 22px; }
+  .dg-toast-plan { font-size: 28px; }
+  .dg-menu { max-width: calc(100% - 12px); }
+  .dg-result-card { padding: 16px 12px; }
+  .dg-result-head { font-size: 22px; }
+  .dg-result-table th, .dg-result-table td { padding: 4px 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .dg-banner.dg-show, .dg-toast-msg, .dg-score-num.dg-bump { animation-duration: 0.01s; }

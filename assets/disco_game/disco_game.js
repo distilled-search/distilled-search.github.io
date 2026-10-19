@@ -17,6 +17,7 @@
   const PAPER = { k: 2.0, alpha: 0.3, C: 1.5 };  // paper, Table 4
   const VISIBLE_PW = { k: 4.0, alpha: 0.5, C: 1.5 };
   const B_MAX = 8;
+  const HOVER = window.matchMedia("(hover: none)").matches ? "Tap" : "Hover";  // touch screens open the menu with a tap
   const HERE = (document.currentScript && document.currentScript.src.replace(/[^/]*$/, "")) || "";
 
   const FAILURE_TEXT = {
@@ -152,7 +153,7 @@
         el("button", { title: "Zoom out", "aria-label": "Zoom out", onclick: () => this.zoomBy(1 / 1.3) }, "−"),
         el("button", { title: "Fit the tree", "aria-label": "Fit the tree", onclick: () => this.fit(null) }, "⤢"));
       const help = el("div", { class: "dg-graph-help" },
-        (you ? "Hover a state for options · " : "Labels: visits N, value Q · ") +
+        (you ? `${HOVER} a state for options · ` : "Labels: visits N, value Q · ") +
         "scroll or pinch to zoom · drag to pan · ⤢ fits the tree");
       this.menu = el("div", { class: "dg-menu", role: "menu" });
       this.toastEl = el("div", { class: "dg-toast" });
@@ -377,7 +378,8 @@
       rect.setAttribute("y", -14);
       rect.setAttribute("width", w);
       label.textContent = text;
-      this.pill.setAttribute("transform", `translate(${q.x + R + 16 + w / 2},${q.y})`);  // beside the node, clear of edges
+      // beside the node, clear of edges; under it (below the label) on a narrow board, where beside would run off-screen
+      this.pill.setAttribute("transform", this.size().W < 520 ? `translate(${q.x},${q.y + R + 40})` : `translate(${q.x + R + 16 + w / 2},${q.y})`);
     }
 
     // --------------------------------------------------------------- hover menu (your board)
@@ -659,8 +661,9 @@
 
   // =============================================================== the game
   class Game {
-    constructor(base) {
+    constructor(base, learnMore) {
       this.base = base;
+      this.learnMore = learnMore;  // selector of the page section that explains DISCO, if any
       this.cache = {};
       this.rate = 1;
       this.fast = false;
@@ -792,7 +795,14 @@
         for (const [k, inp] of Object.entries(inputs)) inp.value = cfg[k];
       };
 
+      const learn = this.learnMore && document.querySelector(this.learnMore);
       this.setup.replaceChildren(el("div", { class: "dg-setup-inner" },
+        el("div", { class: "dg-about" },
+          el("p", {}, el("b", {}, "DISCO"), " distills long-horizon reasoning from search into a policy-value model, so robots can solve multi-step tasks without searching at test time."),
+          learn ? el("button", { class: "dg-btn dg-learn", type: "button", onclick: () => {
+            this.close();
+            learn.scrollIntoView({ behavior: "smooth", block: "start" });
+          } }, "Click here to see how DISCO works first!") : null),
         el("h2", { class: "dg-h2" }, el("span", { class: "dg-challenge" }, el("span", { "aria-hidden": "true" }, "⚡"), " Challenge:"),
           " Try finding more plans than ", el("span", { class: "dg-h2-disco" }, "DISCO"), "!"),
         el("ul", { class: "dg-rules" },
@@ -981,8 +991,8 @@
       else if (open) hint = "click one of the actions under this state to continue.";
       else if (left && this.allSampledFailed(p, n)) hint = "every action sampled here so far failed. Sample again with π; " +
         "if all of them fail, this state becomes a dead end.";
-      else if (left) hint = "sample actions with policy π from this state." + (p.phase === "select" ? " Or hover another state you reached." : "");
-      else return "Nothing left to try from here. Hover another state you have reached.";
+      else if (left) hint = "sample actions with policy π from this state." + (p.phase === "select" ? ` Or ${HOVER.toLowerCase()} another state you reached.` : "");
+      else return `Nothing left to try from here. ${HOVER} another state you have reached.`;
       return p.phase === "rollout" ? `Keep rolling out: ${hint}` : hint[0].toUpperCase() + hint.slice(1);
     }
 
@@ -1305,7 +1315,9 @@
 
     // On narrow screens the two sides are stacked: bring the side that is moving into view.
     bringIntoView(board) {
-      if (window.matchMedia("(max-width: 900px)").matches) board.el.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (!window.matchMedia("(max-width: 900px)").matches) return;
+      board.el.style.scrollMarginTop = `${this.scoreboard.offsetHeight + 6}px`;  // clear of the sticky scoreboard
+      board.el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     finish() {
@@ -1351,7 +1363,7 @@
       mount.dgGame = null;
       const base = (mount.dataset.base || "./").replace(/\/?$/, "/");
       const btn = el("button", { class: "dg-launch-btn", type: "button", onclick: () => {
-        if (!mount.dgGame) mount.dgGame = new Game(base);
+        if (!mount.dgGame) mount.dgGame = new Game(base, mount.dataset.learnMore);
         mount.dgGame.open();
       } }, discoBall(34), el("span", {}, "Click to play the DISCO Game!"));
       btn.addEventListener("animationend", () => btn.classList.replace("dg-pop", "dg-popped"));
