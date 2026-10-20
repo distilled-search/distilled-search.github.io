@@ -358,27 +358,24 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 .section p + div, .section p + h3, .section p + h4, .section .columns + .columns { margin-top: 1.25rem; }
 .section h3.title { margin-top: 2rem; }
 
-/* tinted bands for the interactive sections: soft periwinkle (indigo-100), faintly lit by one or two of the hero's coloured lights */
+/* dark bands, like the hero: its navy gradient and drifting lights. The light cards inside keep their own colours;
+   only what sits on the band itself is recoloured. */
 .band {
-    background-color: #e0e7ff; border-block: 1px solid #d0d9fb;
-    --muted: #475569;  /* one step darker, so muted text keeps its contrast on the tint */
+    position: relative; overflow: hidden; isolation: isolate; color: #cbd5e1;
+    background: radial-gradient(120% 140% at 50% 0%, #13233f 0%, #0b1324 55%, #070b16 100%);
 }
-.band + .band { border-top: 0; }
-.band-green {
-    background-image:
-        radial-gradient(60% 70% at 0% 0%, rgba(34, 197, 94, 0.11), transparent 70%),
-        radial-gradient(50% 60% at 100% 100%, rgba(56, 189, 248, 0.08), transparent 70%);
-}
-.band-violet {
-    background-image:
-        radial-gradient(60% 50% at 100% 0%, rgba(168, 85, 247, 0.09), transparent 70%),
-        radial-gradient(50% 40% at 0% 100%, rgba(34, 197, 94, 0.08), transparent 70%);
-}
-.band-sky {
-    background-image:
-        radial-gradient(60% 70% at 100% 0%, rgba(56, 189, 248, 0.11), transparent 70%),
-        radial-gradient(50% 60% at 0% 100%, rgba(250, 204, 21, 0.08), transparent 70%);
-}
+.band + .band { border-top: 1px solid rgba(255, 255, 255, 0.06); }
+.band .hero-band-lights { opacity: 0.6; }  /* dimmer than the hero, so the text stays easy to read */
+.band .title { color: #fff; }
+.band .title-aside, .band .cheat-note { color: #94a3b8; }
+.band .algo-lead, .band .vp-lead { color: #cbd5e1; }
+.band .game-link { color: #4ade80; border-bottom-color: rgba(74, 222, 128, 0.45); }
+.band .game-link:hover { color: #86efac; border-bottom-color: #4ade80; }
+/* search replay: outlined task tabs with the selected one white, and an edge on the dark timeline */
+.band .ds-tab { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.22); color: #e2e8f0; }
+.band .ds-tab:hover { background: rgba(255, 255, 255, 0.12); }
+.band .ds-tab[aria-selected="true"] { background: #fff; border-color: #fff; color: var(--ink); }
+.band .ds-timeline { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1); }
 .abstract-text { text-align: left; }
 .content .abstract-question {
     margin: 0.2rem 0 1.1rem; padding: 1rem 1.3rem; border-radius: 12px; background: #f1f5f9; border-left: 4px solid #94a3b8;
@@ -666,13 +663,7 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 .bib-copy:hover { border-color: var(--brand); color: var(--brand-dark); }
 .bib-copy:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
 
-/* ------------------------------------------------------------------ acknowledgments: a dark band that closes the page, like the hero */
-.ack {
-    position: relative; overflow: hidden; isolation: isolate;
-    background: radial-gradient(120% 140% at 50% 0%, #13233f 0%, #0b1324 55%, #070b16 100%);
-}
-.ack .hero-band-lights { opacity: 0.6; }  /* dimmer than the hero, so the body text stays easy to read */
-.ack .title { color: #fff; }
+/* ------------------------------------------------------------------ acknowledgments: a dark band (.band) that closes the page */
 .ack-text { max-width: 60rem; margin: 0 auto; font-size: 0.95rem; line-height: 1.7; color: #cbd5e1; text-align: left; }
 
 /* ------------------------------------------------------------------ smaller type on tablets and phones */
