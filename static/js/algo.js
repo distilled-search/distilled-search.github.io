@@ -32,7 +32,7 @@
   };
 
   const STEPS = [
-    { title: "Start", lines: [1], text: "A new task: only the start state s₀ is known." },
+    { title: "Start", lines: [1], ms: 700, text: "A new task: only the start state s₀ is known." },
     { title: "Expand", lines: [4, 5], text: "The policy π proposes a batch of actions from s₀." },
     { title: "Simulate in parallel", lines: [5], text: "All proposed actions run at once in GPU simulation; each yields a new state." },
     { title: "Score", lines: [5], text: "The value function Qφ rates every new state." },
@@ -438,14 +438,15 @@
       cardHead.innerHTML = `<span class="al-card-num">Step ${i + 1} / ${STEPS.length}</span> ${STEPS[i].title}`;
       cardText.textContent = STEPS[i].text;
     }
+    const stepMs = () => STEPS[i].ms || AUTO_MS;  // "Start" shows only s0, so it moves on almost at once
     function tick(now) {
       const dt = now - last;
       last = now;
       if (visible && !paused) {
         elapsed += dt;
-        if (elapsed >= AUTO_MS) go(i + 1);
+        if (elapsed >= stepMs()) go(i + 1);
       }
-      bar.style.width = `${Math.min(elapsed / AUTO_MS, 1) * 100}%`;
+      bar.style.width = `${Math.min(elapsed / stepMs(), 1) * 100}%`;
       requestAnimationFrame(tick);
     }
     const setPause = () => { pause.textContent = paused ? "▶ Play" : "❚❚ Pause"; pause.setAttribute("aria-pressed", String(paused)); };

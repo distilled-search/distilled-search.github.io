@@ -195,7 +195,15 @@
       this.reasons = {};
       this.speed = 1;
       this.cfg = { ...PAPER };
+      this.visible = false;
+      // the replay starts on its own when it scrolls into view, until the user pauses or scrubs it
+      this.userPaused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       this.build();
+      new IntersectionObserver((es) => {
+        this.visible = es.some((e) => e.isIntersecting);
+        if (this.visible) this.autoplay();
+        else if (this.timer) this.pause();  // off-screen: hold here and carry on when it is back in view
+      }, { threshold: 0.35 }).observe(root);
       if (root.dataset.reasons) fetch(root.dataset.reasons).then((r) => r.json()).then((j) => { this.reasons = j; this.render(false); }).catch(() => {});
       fetch(this.base + "data/games.json").then((r) => r.json()).then((games) => {
         this.games = games;
@@ -237,7 +245,7 @@
 
       this.playBtn = el("button", { class: "ds-play", "aria-label": "Play", title: "Play (space)", onclick: () => this.toggle() });
       this.slider = el("input", { class: "ds-slider", type: "range", min: 0, max: 0, step: 1, value: 0, "aria-label": "Iteration",
-        oninput: (e) => { this.pause(); this.go(Number(e.target.value), false); } });
+        oninput: (e) => { this.hold(); this.go(Number(e.target.value), false); } });
       this.markers = el("div", { class: "ds-markers" });
       const track = el("div", { class: "ds-track" }, this.slider, this.markers);
       this.timeLabel = el("span", { class: "ds-time" });
@@ -328,17 +336,31 @@
       this.slider.max = String(last);
       this.markers.replaceChildren(...this.t.snaps.map((s, i) => s.newPlan
         ? el("button", { class: "ds-marker", style: `left:${(i / Math.max(last, 1)) * 100}%`, title: `Plan ${s.plans.length} found in iteration ${i}`,
-          "aria-label": `Jump to iteration ${i}: plan ${s.plans.length}`, onclick: () => { this.pause(); this.go(i, false); } })
+          "aria-label": `Jump to iteration ${i}: plan ${s.plans.length}`, onclick: () => { this.hold(); this.go(i, false); } })
         : null).filter(Boolean));
       this.i = 0;
       this.go(0, false);
+      this.autoplay();
     }
 
     node(id) { return this.t.byId.get(id); }
     src(rel) { return this.t.dir + rel; }
 
     // --------------------------------------------------------------- playback
-    toggle() { if (this.timer) this.pause(); else this.play(); }
+    toggle() {
+      if (this.timer) this.hold();
+      else { this.userPaused = false; this.play(); }
+    }
+
+    // The user took over: stop, and do not start again on scroll.
+    hold() {
+      this.userPaused = true;
+      this.pause();
+    }
+
+    autoplay() {
+      if (this.visible && !this.userPaused && !this.timer && this.t && this.i < this.t.snaps.length - 1) this.play();
+    }
 
     play() {
       if (!this.t) return;
