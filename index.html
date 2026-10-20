@@ -85,9 +85,8 @@
 
                         <div class="column has-text-centered">
                             <div class="publication-links">
-                                <!-- TODO: add arXiv and code links -->
                                 <span class="link-block">
-                                    <a target="_blank" href=""
+                                    <a target="_blank" href="https://arxiv.org/abs/2610.25785" rel="noopener"
                                         class="external-link button is-normal is-rounded is-dark" style="font-size: 125%;">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
@@ -344,6 +343,24 @@
         <script defer src="./static/js/results.js"></script>
     </section>
 
+    <section class="section" id="bibtex">
+        <div class="container is-max-widescreen">
+            <h2 class="title is-4 has-text-centered">BibTeX</h2>
+            <div class="bib-box">
+                <button class="bib-copy" type="button" aria-label="Copy BibTeX">Copy</button>
+                <pre class="bib-code"><code class="nohighlight">@misc{saha2026disco,
+  title         = {Long-Horizon Multi-Object Rearrangement via Distilled Tree Search over Continuous Actions},
+  author        = {Kallol Saha and Yining Hong and Amber Li and Yejin Choi and Maxim Likhachev and David Held},
+  year          = {2026},
+  eprint        = {2610.25785},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2610.25785}
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
     <section class="section ack">
         <div class="container is-max-widescreen">
             <h2 class="title is-4 has-text-centered">Acknowledgments</h2>
@@ -380,6 +397,15 @@
                 more.classList.toggle("is-open", open);
                 toggle.setAttribute("aria-expanded", String(open));
                 toggle.querySelector("span").textContent = open ? "Show less" : "Read the full abstract";
+            });
+            // BibTeX copy button; where the clipboard is unavailable, it selects the entry instead.
+            const bibCopy = document.querySelector(".bib-copy"), bibCode = document.querySelector(".bib-code code");
+            bibCopy.addEventListener("click", () => {
+                const copy = navigator.clipboard ? navigator.clipboard.writeText(bibCode.textContent) : Promise.reject();
+                copy.then(() => {
+                    bibCopy.textContent = "Copied";
+                    setTimeout(() => { bibCopy.textContent = "Copy"; }, 1500);
+                }, () => window.getSelection().selectAllChildren(bibCode));
             });
             window.addEventListener("scroll", update, { passive: true });
             window.addEventListener("resize", update);
