@@ -357,6 +357,28 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 .section .title.is-3 { margin-bottom: 1rem; }
 .section p + div, .section p + h3, .section p + h4, .section .columns + .columns { margin-top: 1.25rem; }
 .section h3.title { margin-top: 2rem; }
+
+/* tinted bands for the interactive sections: slate-100, faintly lit by one or two of the hero's coloured lights */
+.band {
+    background-color: #f1f5f9; border-block: 1px solid #e2e8f0;
+    --muted: #475569;  /* one step darker, so muted text keeps its contrast on the tint */
+}
+.band + .band { border-top: 0; }
+.band-green {
+    background-image:
+        radial-gradient(60% 70% at 0% 0%, rgba(34, 197, 94, 0.11), transparent 70%),
+        radial-gradient(50% 60% at 100% 100%, rgba(56, 189, 248, 0.08), transparent 70%);
+}
+.band-violet {
+    background-image:
+        radial-gradient(60% 50% at 100% 0%, rgba(168, 85, 247, 0.09), transparent 70%),
+        radial-gradient(50% 40% at 0% 100%, rgba(34, 197, 94, 0.08), transparent 70%);
+}
+.band-sky {
+    background-image:
+        radial-gradient(60% 70% at 100% 0%, rgba(56, 189, 248, 0.11), transparent 70%),
+        radial-gradient(50% 60% at 0% 100%, rgba(250, 204, 21, 0.08), transparent 70%);
+}
 .abstract-text { text-align: left; }
 .content .abstract-question {
     margin: 0.2rem 0 1.1rem; padding: 1rem 1.3rem; border-radius: 12px; background: #f1f5f9; border-left: 4px solid #94a3b8;
@@ -639,8 +661,14 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 .bib-copy:hover { border-color: var(--brand); color: var(--brand-dark); }
 .bib-copy:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
 
-/* ------------------------------------------------------------------ acknowledgments */
-.ack-text { max-width: 60rem; margin: 0 auto; font-size: 0.95rem; line-height: 1.7; color: #475569; text-align: left; }
+/* ------------------------------------------------------------------ acknowledgments: a dark band that closes the page, like the hero */
+.ack {
+    position: relative; overflow: hidden; isolation: isolate;
+    background: radial-gradient(120% 140% at 50% 0%, #13233f 0%, #0b1324 55%, #070b16 100%);
+}
+.ack .hero-band-lights { opacity: 0.6; }  /* dimmer than the hero, so the body text stays easy to read */
+.ack .title { color: #fff; }
+.ack-text { max-width: 60rem; margin: 0 auto; font-size: 0.95rem; line-height: 1.7; color: #cbd5e1; text-align: left; }
 
 /* ------------------------------------------------------------------ smaller type on tablets and phones */
 @media (max-width: 900px) {
@@ -765,7 +793,7 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 }
 
 /* ------------------------------------------------------------------ value-function point cloud (paper Fig. 6) */
-.vp-block { max-width: 1100px; margin: 2.6rem auto 0; }
+.vp-block { max-width: 1100px; margin: 0 auto; }
 .vp-lead { max-width: 48rem; margin: -0.4rem auto 1.1rem; text-align: center; font-size: 1.02rem; color: var(--ink-2); line-height: 1.55; }
 .vp {
     position: relative; height: min(620px, 70vh); min-height: 360px; border-radius: 16px; overflow: hidden;

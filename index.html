@@ -167,7 +167,7 @@
         </div>
     </section>
 
-    <section class="section" id="how-disco-works">
+    <section class="section band band-green" id="how-disco-works">
         <div class="container is-max-widescreen">
             <h2 class="title is-3 has-text-centered"><span class="dvima">How <span style="font-weight: bold; color: #22c55e;">DISCO</span> Works</span></h2>
             <p class="algo-lead"><span style="font-weight: bold; color: #22c55e;">DISCO</span> uses Monte-Carlo Tree Search with a learned policy and value function.
@@ -178,7 +178,7 @@
         <script defer src="./static/js/algo.js"></script>
     </section>
 
-    <section class="section">
+    <section class="section band band-violet" id="watch-disco">
         <div class="container is-max-widescreen">
             <h2 class="title is-3 has-text-centered"><span class="dvima">Watch <span style="font-weight: bold; color: #22c55e;">DISCO</span> in Action <span class="title-aside">(during training)</span></span></h2>
             <p class="has-text-centered" style="font-size: 125%">
@@ -264,16 +264,20 @@
             <p class="real-lead">Transferred sim-to-real with no fine-tuning. <span style="font-weight: bold; color: #22c55e;">DISCO</span> against the <b>3DFA</b> baseline, trained on the same sub-task demos, over three trials each.</p>
             <p class="real-why"><b>Why 3DFA?</b> It is the same policy architecture <span style="font-weight: bold; color: #22c55e;">DISCO</span> distills into, so the comparison isolates the effect of <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s search-and-distill self-improvement loop.</p>
             <div class="real" data-real-compare></div>
+        </div>
+        <script defer src="./static/js/sections.js"></script>
+    </section>
 
+    <section class="section band band-sky" id="value-function">
+        <div class="container is-max-widescreen">
             <div class="vp-block">
-                <h3 class="title is-4 has-text-centered">Inside <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s value function</h3>
+                <h2 class="title is-3 has-text-centered">Inside <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s value function</h2>
                 <p class="vp-lead">The real table-bussing point cloud with <span style="font-weight: bold; color: #22c55e;">DISCO</span>'s grasp pose for the orange cup
                     (magenta) and candidate placements in the tray, coloured by their predicted Q-value. Placements that leave space
                     for the plates score highest.</p>
                 <div class="vp" data-value-pcd data-base="assets/value_pcd/"></div>
             </div>
         </div>
-        <script defer src="./static/js/sections.js"></script>
         <script type="module" src="./static/js/value_pcd.js"></script>
     </section>
 
@@ -369,6 +373,7 @@
     </section>
 
     <section class="section ack">
+        <div class="hero-band-lights" aria-hidden="true"></div>
         <div class="container is-max-widescreen">
             <h2 class="title is-4 has-text-centered">Acknowledgments</h2>
             <p class="ack-text">
