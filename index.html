@@ -104,6 +104,16 @@
                                         <span>Code</span>
                                     </a>
                                 </span>
+
+                                <span class="link-block">
+                                    <a href="#bibtex" data-to-bibtex
+                                        class="external-link button is-normal is-rounded is-dark" style="font-size: 125%;">
+                                        <span class="icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        <span>BibTeX</span>
+                                    </a>
+                                </span>
                             </div>
                         </div>
 
@@ -348,14 +358,12 @@
             <h2 class="title is-4 has-text-centered">BibTeX</h2>
             <div class="bib-box">
                 <button class="bib-copy" type="button" aria-label="Copy BibTeX">Copy</button>
-                <pre class="bib-code"><code class="nohighlight">@misc{saha2026disco,
-  title         = {Long-Horizon Multi-Object Rearrangement via Distilled Tree Search over Continuous Actions},
-  author        = {Kallol Saha and Yining Hong and Amber Li and Yejin Choi and Maxim Likhachev and David Held},
-  year          = {2026},
-  eprint        = {2610.25785},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO},
-  url           = {https://arxiv.org/abs/2610.25785}
+                <pre class="bib-code"><code class="nohighlight">@InProceedings{saha2026disco,
+  title     = {Long-Horizon Multi-Object Rearrangement via Distilled Tree Search over Continuous Actions},
+  author    = {Saha, Kallol and Hong, Yining and Li, Amber and Choi, Yejin and Likhachev, Maxim and Held, David},
+  booktitle = {Proceedings of The 10th Conference on Robot Learning},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2610.25785},
 }</code></pre>
             </div>
         </div>
@@ -397,6 +405,11 @@
                 more.classList.toggle("is-open", open);
                 toggle.setAttribute("aria-expanded", String(open));
                 toggle.querySelector("span").textContent = open ? "Show less" : "Read the full abstract";
+            });
+            // BibTeX button in the header: scroll smoothly down to the citation.
+            document.querySelector("[data-to-bibtex]").addEventListener("click", (e) => {
+                e.preventDefault();
+                document.getElementById("bibtex").scrollIntoView({ behavior: "smooth", block: "start" });
             });
             // BibTeX copy button; where the clipboard is unavailable, it selects the entry instead.
             const bibCopy = document.querySelector(".bib-copy"), bibCode = document.querySelector(".bib-code code");
