@@ -358,9 +358,9 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 .section p + div, .section p + h3, .section p + h4, .section .columns + .columns { margin-top: 1.25rem; }
 .section h3.title { margin-top: 2rem; }
 
-/* tinted bands for the interactive sections: slate-100, faintly lit by one or two of the hero's coloured lights */
+/* tinted bands for the interactive sections: soft periwinkle (indigo-100), faintly lit by one or two of the hero's coloured lights */
 .band {
-    background-color: #f1f5f9; border-block: 1px solid #e2e8f0;
+    background-color: #e0e7ff; border-block: 1px solid #d0d9fb;
     --muted: #475569;  /* one step darker, so muted text keeps its contrast on the tint */
 }
 .band + .band { border-top: 0; }
@@ -394,7 +394,12 @@ body .dg-launch, body .dg-overlay { --dg-font: var(--site-font); }
 @media (max-width: 600px) { .teaser-video { width: calc(100vw - 1.5rem); border-radius: 10px; } }
 
 .publication-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
-.publication-links .button { font-weight: 600; letter-spacing: 0.01em; }
+.publication-links .button { font-size: 1.25rem; font-weight: 600; letter-spacing: 0.01em; }
+/* phones: smaller buttons, so arXiv, Code and BibTeX stay on one row */
+@media (max-width: 600px) {
+    .publication-links { gap: 0.4rem; }
+    .publication-links .button { font-size: 0.95rem; padding-left: 0.85em; padding-right: 0.85em; }
+}
 
 @media (max-width: 600px) {
     .people-card { padding: 1rem 0.9rem 0.9rem; border-radius: 14px; }
